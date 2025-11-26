@@ -7,7 +7,7 @@
 body {
   width: 100%;
 }
-.main_column .column_content_wrapper .column_content .column_article
+
 .res_pc {
   display: block;
 }
@@ -24,11 +24,6 @@ body {
   .res_sp {
     display: block !important;
   }
-	
-	
-/*     main .main_price .price_content table tbody tr td:nth-of-type(3) {
-        display: block !important;
-    } */
 }
 
 a {
@@ -96,16 +91,13 @@ header .header_content .header_logo img {
   margin-right: clamp(6.4px, 0.5rem, 12px);
 }
 header .header_content .header_logo h1 {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
   width: fit-content;
   line-height: 1.6;
   font-family: "Noto Serif JP", "游明朝体", "Yu Mincho", "YuMincho", serif;
   font-size: clamp(16px, 1.25rem, 30px);
   font-weight: 800;
   background: linear-gradient(to right, rgba(183, 143, 54, 0.8), rgba(202, 171, 102, 0.8) 45%, rgba(152, 127, 71, 0.8));
-  -webkit-background-clip: text;
-          background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   text-shadow: 0 clamp(1.6px, 0.125rem, 3px) clamp(3.2px, 0.25rem, 6px) rgba(0, 0, 0, 0.1);
 }
@@ -144,12 +136,11 @@ header .header_content .header_content_menu ul {
   list-style: none;
   color: rgb(102, 102, 102);
   font-family: "Noto Serif JP", "游明朝体", "Yu Mincho", "YuMincho", serif;
-  font-size: clamp(11px, 0.875rem, 18px);
+  font-size: clamp(11.2px, 0.875rem, 21px);
   font-weight: 800;
-    inline-size: max-content;
 }
 header .header_content .header_content_menu ul li:not(:last-child) {
-  margin-right: clamp(19.2px, 1.5rem, 36px);
+  margin-right: clamp(16px, 1.25rem, 30px);
 }
 
 main .slide_image_top_wrapper {
@@ -193,16 +184,13 @@ main .main_recommend_menu {
   padding: clamp(64px, 5rem, 120px) 0;
 }
 main .main_recommend_menu h2 {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
   width: fit-content;
   padding-left: clamp(176px, 13.75rem, 330px);
   font-size: clamp(51.2px, 4rem, 96px);
   font-family: "cannia";
   font-weight: 400;
   background: linear-gradient(to right, rgba(183, 143, 54, 0.8), rgba(202, 171, 102, 0.8), rgba(102, 83, 40, 0.8));
-  -webkit-background-clip: text;
-          background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 main .main_recommend_menu .recommend_slide {
@@ -210,8 +198,6 @@ main .main_recommend_menu .recommend_slide {
   margin: clamp(64px, 5rem, 120px) auto 0;
 }
 main .main_recommend_menu .recommend_slide_image a {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
   width: fit-content;
   margin-right: clamp(28.8px, 2.25rem, 54px);
 }
@@ -393,15 +379,12 @@ main .main_features .feature_content:nth-of-type(4) img:nth-of-type(2) {
 main .main_features h2,
 main .main_concept h2,
 main .main_doctor_top h2 {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
   width: fit-content;
   font-size: clamp(51.2px, 4rem, 96px);
   font-weight: 200;
   font-family: "cannia";
   background: linear-gradient(to right, rgba(183, 143, 54, 0.8), rgba(202, 171, 102, 0.8) 45%, rgba(152, 127, 71, 0.8));
-  -webkit-background-clip: text;
-          background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   letter-spacing: clamp(8.192px, 0.64rem, 15.36px);
   margin: 0 auto;
@@ -409,15 +392,12 @@ main .main_doctor_top h2 {
 main .main_features h3,
 main .main_concept h3,
 main .main_doctor_top h3 {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
   width: fit-content;
   font-size: clamp(19.2px, 1.5rem, 36px);
   font-family: "Noto Serif JP", "Yu Mincho", "游明朝体", serif;
   font-weight: 400;
   background: linear-gradient(to right, rgba(183, 143, 54, 0.8), rgba(202, 171, 102, 0.8) 45%, rgba(152, 127, 71, 0.8));
-  -webkit-background-clip: text;
-          background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   margin: clamp(12.8px, 1rem, 24px) auto 0;
   letter-spacing: clamp(3.072px, 0.24rem, 5.76px);
@@ -482,8 +462,7 @@ main .main_concept .concept_text h3 {
   color: rgb(173, 127, 82);
   margin-bottom: clamp(19.2px, 1.5rem, 36px);
   background: transparent;
-  -webkit-background-clip: text;
-          background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: rgb(173, 127, 82);
   letter-spacing: 0;
 }
@@ -538,8 +517,7 @@ main .main_doctor_top .doctor_top_content .doctor_top_content_text h3 {
   line-height: 1.7;
   letter-spacing: clamp(0.256px, 0.02rem, 0.48px);
   background: transparent;
-  -webkit-background-clip: text;
-          background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: rgb(173, 127, 82);
 }
 main .main_doctor_top .doctor_top_content .doctor_top_content_text p {
@@ -549,8 +527,6 @@ main .main_doctor_top .doctor_top_content .doctor_top_content_text p {
   line-height: 1.6;
 }
 main .main_doctor_top .doctor_top_content .doctor_top_content_text h4 {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
   width: fit-content;
   font-size: clamp(14.4px, 1.125rem, 27px);
   font-weight: 600;
@@ -560,14 +536,10 @@ main .main_doctor_top .doctor_top_content .doctor_top_content_text h4 {
   margin: clamp(16px, 1.25rem, 30px) 0 0 0;
 }
 main .main_doctor_top .doctor_top_content .doctor_top_content_text ul {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
   width: fit-content;
   color: rgb(102, 102, 102);
 }
 main .main_doctor_top .doctor_top_content .doctor_top_content_text ul li {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
   width: fit-content;
   margin: 0 0 0 clamp(20px, 1.5625rem, 37.5px);
   line-height: 1.5;
@@ -626,15 +598,12 @@ main .main_gallery h2,
 main .main_access h2,
 main .main_calendar h2,
 main .main_price h2 {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
   width: fit-content;
   font-size: clamp(51.2px, 4rem, 96px);
   font-weight: 200;
   font-family: "cannia";
   background: linear-gradient(to right, rgba(183, 143, 54, 0.8), rgba(202, 171, 102, 0.8) 45%, rgba(152, 127, 71, 0.8));
-  -webkit-background-clip: text;
-          background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   letter-spacing: clamp(8.192px, 0.64rem, 15.36px);
   margin: 0 auto;
@@ -645,15 +614,12 @@ main .main_gallery > h3,
 main .main_access > h3,
 main .main_calendar > h3,
 main .main_price > h3 {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
   width: fit-content;
   font-size: clamp(19.2px, 1.5rem, 36px);
   font-family: "Noto Serif JP", "Yu Mincho", "游明朝体", serif;
   font-weight: 400;
   background: linear-gradient(to right, rgba(183, 143, 54, 0.8), rgba(202, 171, 102, 0.8) 45%, rgba(152, 127, 71, 0.8));
-  -webkit-background-clip: text;
-          background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   margin: clamp(12.8px, 1rem, 24px) auto 0;
   letter-spacing: clamp(3.072px, 0.24rem, 5.76px);
@@ -675,16 +641,13 @@ main .main_menu {
   background: url("../img/main_menu_bg.png") center/cover no-repeat;
 }
 main .main_menu .menu_content h3 {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
   width: fit-content;
   font-size: clamp(51.2px, 4rem, 96px);
   font-weight: 400;
   font-family: "cannia";
   text-shadow: 0 clamp(2.4px, 0.1875rem, 4.5px) clamp(2.4px, 0.1875rem, 4.5px) rgba(0, 0, 0, 0.1);
-  background: linear-gradient(#987F47, #C09D4E 27%, #CAAB66 55%, #987F47);
-  -webkit-background-clip: text;
-          background-clip: text;
+  background: linear-gradient(#987f47, #c09d4e 27%, #caab66 55%, #987f47);
+  background-clip: text;
   color: rgb(102, 102, 102);
   -webkit-text-fill-color: transparent;
   letter-spacing: clamp(8.192px, 0.64rem, 15.36px);
@@ -752,8 +715,7 @@ main .content_brown_button {
   display: flex;
   justify-content: center;
   align-items: center;
-  -moz-column-gap: clamp(8px, 0.625rem, 15px);
-       column-gap: clamp(8px, 0.625rem, 15px);
+  column-gap: clamp(8px, 0.625rem, 15px);
   width: clamp(336px, 26.25rem, 630px);
   height: clamp(51.2px, 4rem, 96px);
   margin: clamp(32px, 2.5rem, 60px) auto 0;
@@ -872,28 +834,22 @@ main .main_news_top .news_top_content .news_top_content_header {
   box-sizing: border-box;
 }
 main .main_news_top .news_top_content .news_top_content_header h2 {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
   width: fit-content;
   font-family: "cannia";
   font-weight: 300;
   font-size: clamp(51.2px, 4rem, 96px);
   letter-spacing: clamp(8.192px, 0.64rem, 15.36px);
   background: linear-gradient(to right, rgba(183, 143, 54, 0.8), rgba(202, 171, 102, 0.8) 45%, rgba(152, 127, 71, 0.8));
-  -webkit-background-clip: text;
-          background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 main .main_news_top .news_top_content .news_top_content_header h3 {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
   width: fit-content;
   font-size: clamp(19.2px, 1.5rem, 36px);
   font-family: "Noto Serif JP", "Yu Mincho", "游明朝体", serif;
   font-weight: 400;
   background: linear-gradient(to right, rgba(183, 143, 54, 0.8), rgba(202, 171, 102, 0.8) 45%, rgba(152, 127, 71, 0.8));
-  -webkit-background-clip: text;
-          background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   margin: clamp(12.8px, 1rem, 24px) auto 0;
   letter-spacing: clamp(3.072px, 0.24rem, 5.76px);
@@ -920,8 +876,7 @@ main .main_news_top .news_top_content .news_top_content_text_wrapper > a img {
 }
 main .main_news_top .news_top_content .news_top_content_text_wrapper .news_top_content_text {
   display: flex;
-  -moz-column-gap: clamp(19.2px, 1.5rem, 36px);
-       column-gap: clamp(19.2px, 1.5rem, 36px);
+  column-gap: clamp(19.2px, 1.5rem, 36px);
   width: clamp(408.8px, 31.9375rem, 766.5px);
   margin-bottom: clamp(152px, 11.875rem, 285px);
   font-size: clamp(12.8px, 1rem, 24px);
@@ -1009,8 +964,7 @@ main .main_access .main_access_bg {
 main .main_access .access_content_wrapper {
   display: flex;
   align-items: center;
-  -moz-column-gap: clamp(42.4px, 3.3125rem, 79.5px);
-       column-gap: clamp(42.4px, 3.3125rem, 79.5px);
+  column-gap: clamp(42.4px, 3.3125rem, 79.5px);
   width: clamp(800px, 62.5rem, 1500px);
   margin: clamp(51.2px, 4rem, 96px) auto 0;
 }
@@ -1034,7 +988,8 @@ main .main_access .access_content_wrapper .access_text {
   justify-content: space-between;
   align-items: center;
 }
-main .main_access .access_content_wrapper .access_text h4, main .main_access .access_content_wrapper .access_text p {
+main .main_access .access_content_wrapper .access_text h4,
+main .main_access .access_content_wrapper .access_text p {
   font-weight: 700;
   font-size: clamp(12.8px, 1rem, 24px);
   letter-spacing: clamp(1.024px, 0.08rem, 1.92px);
@@ -1059,8 +1014,7 @@ main .main_calendar {
 main .main_calendar .calendar_content_wrapper {
   display: flex;
   justify-content: center;
-  -moz-column-gap: clamp(32px, 2.5rem, 60px);
-       column-gap: clamp(32px, 2.5rem, 60px);
+  column-gap: clamp(32px, 2.5rem, 60px);
   margin: clamp(38.4px, 3rem, 72px) 0 0;
 }
 main .main_calendar .calendar_content_wrapper h3 {
@@ -1103,7 +1057,10 @@ main .main_calendar .calendar_content_wrapper .calendar td > div:nth-of-type(2) 
   font-size: clamp(9.6px, 0.75rem, 18px);
 }
 main .main_calendar .calendar_content_wrapper .calendar .break {
-  color: rgb(255 0 0);
+  color: #cccccc;
+}
+main .main_calendar .calendar_content_wrapper .calendar .break1 {
+  color: #0000ff;
 }
 main .main_booking {
   background-color: rgb(247, 247, 247);
@@ -1119,9 +1076,8 @@ main .main_booking .booking_content {
   margin: 0 auto;
   padding: clamp(64px, 5rem, 120px) 0;
 }
-main .main_booking .booking_content h2, main .main_booking .booking_content h3 {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
+main .main_booking .booking_content h2,
+main .main_booking .booking_content h3 {
   width: fit-content;
   font-weight: 600;
   font-family: "Yu Mincho", "Noto Serif JP", serif;
@@ -1143,8 +1099,7 @@ main .main_booking .booking_content h2 {
 }
 main .main_booking .booking_content .booking_content_link {
   display: flex;
-  -moz-column-gap: clamp(6.4px, 0.5rem, 12px);
-       column-gap: clamp(6.4px, 0.5rem, 12px);
+  column-gap: clamp(6.4px, 0.5rem, 12px);
   justify-content: center;
   color: white;
   font-size: clamp(12.8px, 1rem, 24px);
@@ -1155,8 +1110,7 @@ main .main_booking .booking_content .booking_content_link {
 main .main_booking .booking_content .booking_content_link a {
   display: flex;
   align-items: center;
-  -moz-column-gap: clamp(8px, 0.625rem, 15px);
-       column-gap: clamp(8px, 0.625rem, 15px);
+  column-gap: clamp(8px, 0.625rem, 15px);
   border-radius: clamp(4px, 0.3125rem, 7.5px);
   padding: clamp(6.4px, 0.5rem, 12px) clamp(12.8px, 1rem, 24px);
 }
@@ -1194,8 +1148,7 @@ footer .footer_content_about_wrapper > img {
 }
 footer .footer_content_about_wrapper .footer_link {
   display: flex;
-  -moz-column-gap: clamp(8px, 0.625rem, 15px);
-       column-gap: clamp(8px, 0.625rem, 15px);
+  column-gap: clamp(8px, 0.625rem, 15px);
   margin: clamp(32px, 2.5rem, 60px) 0 0 0;
   font-family: "Zen Old Mincho", "Noto Serif JP", "Yu Mincho", serif;
   font-weight: 700;
@@ -1207,8 +1160,7 @@ footer .footer_content_about_wrapper .footer_link a {
   display: flex;
   justify-content: center;
   align-items: center;
-  -moz-column-gap: clamp(4px, 0.3125rem, 7.5px);
-       column-gap: clamp(4px, 0.3125rem, 7.5px);
+  column-gap: clamp(4px, 0.3125rem, 7.5px);
   border: white clamp(0.8px, 0.0625rem, 1.5px) solid;
   border-radius: clamp(4px, 0.3125rem, 7.5px);
   padding: clamp(6.4px, 0.5rem, 12px);
@@ -1218,8 +1170,6 @@ footer .footer_content_about_wrapper .footer_link a img {
   width: clamp(16px, 1.25rem, 30px);
 }
 footer .footer_content_about_wrapper .footer_content_about {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
   width: fit-content;
   margin: clamp(19.2px, 1.5rem, 36px) 0 0 0;
 }
@@ -1230,7 +1180,8 @@ footer .footer_content_about_wrapper .footer_content_about .footer_about_text {
   align-items: center;
   margin: 0 0 clamp(12.8px, 1rem, 24px) 0;
 }
-footer .footer_content_about_wrapper .footer_content_about .footer_about_text h4, footer .footer_content_about_wrapper .footer_content_about .footer_about_text p {
+footer .footer_content_about_wrapper .footer_content_about .footer_about_text h4,
+footer .footer_content_about_wrapper .footer_content_about .footer_about_text p {
   font-family: "Yu Mincho", "Noto Serif JP", serif;
   font-weight: 200;
   font-size: clamp(12.8px, 1rem, 24px);
@@ -1255,8 +1206,7 @@ footer .footer_article_wrapper .footer_content_article .footer_article {
   display: flex;
   width: clamp(224px, 17.5rem, 420px);
   margin: clamp(12.8px, 1rem, 24px) 0 0 0;
-  -moz-column-gap: clamp(19.2px, 1.5rem, 36px);
-       column-gap: clamp(19.2px, 1.5rem, 36px);
+  column-gap: clamp(19.2px, 1.5rem, 36px);
 }
 footer .footer_article_wrapper .footer_content_article .footer_article div {
   display: flex;
@@ -1294,8 +1244,6 @@ footer .footer_article_wrapper .footer_content_article:nth-of-type(2) .footer_ar
 }
 footer .footer_content_copyright {
   width: 100%;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
   height: fit-content;
   font-family: "Yu Mincho", "Noto Serif JP", serif;
   font-weight: 200;
@@ -1328,15 +1276,15 @@ footer .footer_content_copyright {
     margin-left: 0;
   }
   header .header_information .header_information_phone,
-header .header_information > p:nth-of-type(1),
-header .header_information > p:nth-of-type(2) {
+  header .header_information > p:nth-of-type(1),
+  header .header_information > p:nth-of-type(2) {
     display: block;
   }
 }
 @media screen and (max-width: 430px) and (max-width: 430px) {
   header .header_information .header_information_phone,
-header .header_information > p:nth-of-type(1),
-header .header_information > p:nth-of-type(2) {
+  header .header_information > p:nth-of-type(1),
+  header .header_information > p:nth-of-type(2) {
     display: none !important;
   }
 }
@@ -1372,7 +1320,7 @@ header .header_information > p:nth-of-type(2) {
     top: clamp(17.6px, 1.375rem, 33px);
   }
   header .header_content > div:nth-of-type(1).open div:nth-of-type(1),
-header .header_content > div:nth-of-type(1).open div:nth-of-type(3) {
+  header .header_content > div:nth-of-type(1).open div:nth-of-type(3) {
     top: clamp(10px, 0.78125rem, 18.75px);
   }
   header .header_content > div:nth-of-type(1).open div:nth-of-type(1) {
@@ -1441,8 +1389,7 @@ header .header_content > div:nth-of-type(1).open div:nth-of-type(3) {
   header .header_content .header_content_menu .header_menu_link div {
     display: flex;
     justify-content: center;
-    -moz-column-gap: clamp(8px, 0.625rem, 15px);
-         column-gap: clamp(8px, 0.625rem, 15px);
+    column-gap: clamp(8px, 0.625rem, 15px);
     padding: clamp(8px, 0.625rem, 15px) 0;
     border: clamp(0.8px, 0.0625rem, 1.5px) solid;
     border-color: rgb(173, 127, 82) transparent rgb(173, 127, 82) transparent;
@@ -1452,8 +1399,6 @@ header .header_content > div:nth-of-type(1).open div:nth-of-type(3) {
   header .header_content .header_content_menu.open {
     transform: scaleY(1);
   }
-}
-@media screen and (max-width: 430px) {
   main .slide_image_top {
     width: clamp(312px, 24.375rem, 585px);
     height: clamp(312px, 24.375rem, 585px);
@@ -1483,19 +1428,13 @@ header .header_content > div:nth-of-type(1).open div:nth-of-type(3) {
   main .slide_image_top img:nth-of-type(2) {
     margin: 0;
   }
-}
-@media screen and (max-width: 430px) {
   main .slide_image_top .slide_content.slick-center img {
     transform: scale(1);
   }
-}
-@media screen and (max-width: 430px) {
   main .main_recommend_menu {
     padding: clamp(32px, 2.5rem, 60px) 0 clamp(83.2px, 6.5rem, 156px);
   }
   main .main_recommend_menu h2 {
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
     width: fit-content;
     padding-left: clamp(19.2px, 1.5rem, 36px);
     font-size: clamp(25.6px, 2rem, 48px);
@@ -1505,17 +1444,15 @@ header .header_content > div:nth-of-type(1).open div:nth-of-type(3) {
     margin: clamp(32px, 2.5rem, 60px) auto 0;
   }
   main .main_recommend_menu .recommend_slide_image a {
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
     width: fit-content;
     margin-right: clamp(28.8px, 2.25rem, 54px);
   }
   main .main_recommend_menu .recommend_prev,
-main .main_recommend_menu .recommend_next,
-main .main_recommend_menu .gallery_prev,
-main .main_recommend_menu .gallery_next,
-main .main_recommend_menu .about_case_pagenation .prev,
-main .main_recommend_menu .about_case_pagenation .next {
+  main .main_recommend_menu .recommend_next,
+  main .main_recommend_menu .gallery_prev,
+  main .main_recommend_menu .gallery_next,
+  main .main_recommend_menu .about_case_pagenation .prev,
+  main .main_recommend_menu .about_case_pagenation .next {
     top: clamp(219.2px, 17.125rem, 411px);
   }
   main .main_recommend_menu .recommend_prev {
@@ -1523,12 +1460,10 @@ main .main_recommend_menu .about_case_pagenation .next {
     left: clamp(114.4px, 8.9375rem, 214.5px);
   }
   main .main_recommend_menu .recommend_next,
-main .main_recommend_menu .gallery_next,
-main .main_recommend_menu .about_case_pagenation .next {
+  main .main_recommend_menu .gallery_next,
+  main .main_recommend_menu .about_case_pagenation .next {
     right: clamp(117.6px, 9.1875rem, 220.5px);
   }
-}
-@media screen and (max-width: 430px) {
   main .main_features {
     padding: clamp(32px, 2.5rem, 60px) 0;
   }
@@ -1595,35 +1530,31 @@ main .main_recommend_menu .about_case_pagenation .next {
     right: clamp(-60px, -2.5rem, -32px);
     z-index: 1;
   }
-}
-@media screen and (max-width: 430px) {
   main .main_concept h2,
-main .main_doctor_top h2,
-main .main_menu h2,
-main .main_case_top h2,
-main .main_news_top h2,
-main .main_access h2,
-main .main_calendar h2,
-main .main_price h2 {
+  main .main_doctor_top h2,
+  main .main_menu h2,
+  main .main_case_top h2,
+  main .main_news_top h2,
+  main .main_access h2,
+  main .main_calendar h2,
+  main .main_price h2 {
     font-weight: 400;
     font-size: clamp(25.6px, 2rem, 48px);
     letter-spacing: clamp(4.096px, 0.32rem, 7.68px);
   }
   main .main_concept h3,
-main .main_doctor_top h3,
-main .main_menu h3,
-main .main_case_top h3,
-main .main_news_top h3,
-main .main_access h3,
-main .main_calendar h3,
-main .main_price h3 {
+  main .main_doctor_top h3,
+  main .main_menu h3,
+  main .main_case_top h3,
+  main .main_news_top h3,
+  main .main_access h3,
+  main .main_calendar h3,
+  main .main_price h3 {
     font-weight: 500;
     font-size: clamp(14.4px, 1.125rem, 27px);
     font-weight: 500;
     letter-spacing: clamp(2.304px, 0.18rem, 4.32px);
   }
-}
-@media screen and (max-width: 430px) {
   main .main_concept {
     width: clamp(296.8px, 23.1875rem, 556.5px);
     height: clamp(520px, 40.625rem, 975px);
@@ -1674,8 +1605,6 @@ main .main_price h3 {
     width: clamp(192px, 15rem, 360px);
     height: clamp(40px, 3.125rem, 75px);
   }
-}
-@media screen and (max-width: 430px) {
   main .main_doctor_top {
     padding: clamp(32px, 2.5rem, 60px) 0;
   }
@@ -1699,8 +1628,6 @@ main .main_price h3 {
   main .main_doctor_top .doctor_top_content img {
     width: clamp(280px, 21.875rem, 525px);
   }
-}
-@media screen and (max-width: 430px) {
   main .main_doctor_top .doctor_top_content .doctor_top_content_text h3 {
     font-size: clamp(12.8px, 1rem, 24px);
     letter-spacing: clamp(0.256px, 0.02rem, 0.48px);
@@ -1712,8 +1639,6 @@ main .main_price h3 {
     margin: clamp(4.8px, 0.375rem, 9px) 0 0 0;
   }
   main .main_doctor_top .doctor_top_content .doctor_top_content_text ul li {
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
     width: fit-content;
     margin: 0 0 0 clamp(20px, 1.5625rem, 37.5px);
   }
@@ -1744,8 +1669,6 @@ main .main_price h3 {
     height: clamp(40px, 3.125rem, 75px);
     margin: clamp(6.4px, 0.5rem, 12px) auto 0;
   }
-}
-@media screen and (max-width: 430px) {
   main .main_menu {
     padding: clamp(32px, 2.5rem, 60px) 0;
   }
@@ -1770,7 +1693,7 @@ main .main_price h3 {
     margin-top: clamp(12.8px, 1rem, 24px);
   }
   main .main_menu .menu_content:nth-of-type(2),
-main .main_menu .menu_content:nth-of-type(4) {
+  main .main_menu .menu_content:nth-of-type(4) {
     margin: 0 0 0 auto;
     width: clamp(296px, 23.125rem, 555px);
     height: clamp(403.2px, 31.5rem, 756px);
@@ -1799,72 +1722,66 @@ main .main_menu .menu_content:nth-of-type(4) {
     background: url("../img/main_menu_image3_sp.png") center/cover no-repeat;
     margin-top: clamp(19.2px, 1.5rem, 36px);
   }
-}
-@media screen and (max-width: 430px) {
   main .main_case_top {
     padding: clamp(32px, 2.5rem, 60px) 0;
     overflow: hidden;
   }
-}
-@media screen and (max-width: 430px) {
   main .case_top_content_wrapper {
     transform-origin: left;
     transform: translateX(clamp(-457.5px, -19.0625rem, -244px));
   }
   main .case_top_content_wrapper .case_top_content,
-main .case_top_content_wrapper .case_link {
+  main .case_top_content_wrapper .case_link {
     width: clamp(192px, 15rem, 360px);
     padding: clamp(24px, 1.875rem, 45px) clamp(16px, 1.25rem, 30px) 0 clamp(16px, 1.25rem, 30px);
     background-color: rgb(247, 247, 247);
     box-sizing: border-box;
   }
   main .case_top_content_wrapper .case_top_content .case_top_content_text:nth-of-type(2),
-main .case_top_content_wrapper .case_link .case_top_content_text:nth-of-type(2) {
+  main .case_top_content_wrapper .case_link .case_top_content_text:nth-of-type(2) {
     height: clamp(36px, 2.8125rem, 67.5px);
     margin: clamp(8px, 0.625rem, 15px) 0 clamp(8px, 0.625rem, 15px) 0;
   }
   main .case_top_content_wrapper .case_top_content .case_top_content_text:nth-of-type(3),
-main .case_top_content_wrapper .case_link .case_top_content_text:nth-of-type(3) {
+  main .case_top_content_wrapper .case_link .case_top_content_text:nth-of-type(3) {
     height: clamp(36px, 2.8125rem, 67.5px);
     margin: 0 0 clamp(8px, 0.625rem, 15px) 0;
   }
   main .case_top_content_wrapper .case_top_content .case_top_content_text:nth-of-type(4),
-main .case_top_content_wrapper .case_link .case_top_content_text:nth-of-type(4) {
+  main .case_top_content_wrapper .case_link .case_top_content_text:nth-of-type(4) {
     height: clamp(40.8px, 3.1875rem, 76.5px);
     margin: 0 0 clamp(8px, 0.625rem, 15px) 0;
   }
   main .case_top_content_wrapper .case_top_content .case_top_content_text:nth-of-type(5),
-main .case_top_content_wrapper .case_link .case_top_content_text:nth-of-type(5) {
+  main .case_top_content_wrapper .case_link .case_top_content_text:nth-of-type(5) {
     height: clamp(27.2px, 2.125rem, 51px);
     margin: 0 0 clamp(24px, 1.875rem, 45px) 0;
   }
   main .case_top_content_wrapper .case_top_content h4,
-main .case_top_content_wrapper .case_link h4 {
+  main .case_top_content_wrapper .case_link h4 {
     font-size: clamp(9.6px, 0.75rem, 18px);
     font-weight: 500;
     color: rgb(175, 175, 175);
     letter-spacing: clamp(0.48px, 0.0375rem, 0.9px);
   }
   main .case_top_content_wrapper .case_top_content p,
-main .case_top_content_wrapper .case_link p {
+  main .case_top_content_wrapper .case_link p {
     font-size: clamp(11.2px, 0.875rem, 21px);
     font-weight: 500;
     color: rgb(77, 77, 77);
     letter-spacing: clamp(0.56px, 0.04375rem, 1.05px);
     line-height: 1;
   }
-}
-@media screen and (max-width: 430px) {
   main .case_top_content_img,
-main .case_link_img,
-main .about_case_img {
+  main .case_link_img,
+  main .about_case_img {
     width: clamp(160px, 12.5rem, 300px);
     height: clamp(179.2px, 14rem, 336px);
     border: clamp(0.8px, 0.0625rem, 1.5px) rgb(163, 129, 9) solid;
   }
   main .case_top_content_img > div,
-main .case_link_img > div,
-main .about_case_img > div {
+  main .case_link_img > div,
+  main .about_case_img > div {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -1873,13 +1790,11 @@ main .about_case_img > div {
     background-color: white;
   }
   main .case_top_content_img > div p,
-main .case_link_img > div p,
-main .about_case_img > div p {
+  main .case_link_img > div p,
+  main .about_case_img > div p {
     color: rgb(77, 77, 77);
     margin: 0 0 clamp(8px, 0.625rem, 15px) 0;
   }
-}
-@media screen and (max-width: 430px) {
   main .main_news_top {
     padding: clamp(32px, 2.5rem, 60px) 0;
   }
@@ -1903,8 +1818,7 @@ main .about_case_img > div p {
     font-size: clamp(25.6px, 2rem, 48px);
     letter-spacing: clamp(4.096px, 0.32rem, 7.68px);
     background: linear-gradient(to right, rgba(183, 143, 54, 0.8), rgba(202, 171, 102, 0.8) 45%, rgba(152, 127, 71, 0.8));
-    -webkit-background-clip: text;
-            background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     margin: 0 auto;
   }
@@ -1913,8 +1827,7 @@ main .about_case_img > div p {
     font-family: "Noto Serif JP", "Yu Mincho", "游明朝体", serif;
     font-weight: 500;
     background: linear-gradient(to right, rgba(183, 143, 54, 0.8), rgba(202, 171, 102, 0.8) 45%, rgba(152, 127, 71, 0.8));
-    -webkit-background-clip: text;
-            background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     margin: clamp(12.8px, 1rem, 24px) auto 0;
     letter-spacing: clamp(3.072px, 0.24rem, 5.76px);
@@ -1969,8 +1882,6 @@ main .about_case_img > div p {
     width: clamp(46.4px, 3.625rem, 87px);
     height: clamp(43.2px, 3.375rem, 81px);
   }
-}
-@media screen and (max-width: 430px) {
   main .main_gallery {
     padding: clamp(32px, 2.5rem, 60px) 0;
     background-color: rgb(255, 249, 245);
@@ -2002,32 +1913,26 @@ main .about_case_img > div p {
 }
 @media screen and (max-width: 430px) {
   main .main_gallery .gallery_prev,
-main .main_gallery .gallery_next {
+  main .main_gallery .gallery_next {
     top: auto;
     bottom: clamp(-51px, -2.125rem, -27.2px);
     width: clamp(16px, 1.25rem, 30px);
     height: clamp(16px, 1.25rem, 30px);
   }
   main .main_gallery .gallery_prev::before, main .main_gallery .gallery_prev::after,
-main .main_gallery .gallery_next::before,
-main .main_gallery .gallery_next::after {
+  main .main_gallery .gallery_next::before,
+  main .main_gallery .gallery_next::after {
     width: clamp(4.8px, 0.375rem, 9px);
     height: clamp(0.8px, 0.0625rem, 1.5px);
     top: clamp(7.6px, 0.59375rem, 14.25px);
     left: clamp(4.8px, 0.375rem, 9px);
   }
-}
-@media screen and (max-width: 430px) {
   main .main_gallery .gallery_prev {
     left: clamp(133.6px, 10.4375rem, 250.5px);
   }
-}
-@media screen and (max-width: 430px) {
   main .main_gallery .gallery_next {
     right: clamp(133.6px, 10.4375rem, 250.5px);
   }
-}
-@media screen and (max-width: 430px) {
   main .main_access {
     padding: clamp(32px, 2.5rem, 60px) 0;
     font-family: "Noto Serif JP", "Yu Mincho", "游明朝体", serif;
@@ -2038,8 +1943,7 @@ main .main_gallery .gallery_next::after {
   main .main_access .access_content_wrapper {
     flex-direction: column;
     row-gap: clamp(19.2px, 1.5rem, 36px);
-    -moz-column-gap: clamp(42.4px, 3.3125rem, 79.5px);
-         column-gap: clamp(42.4px, 3.3125rem, 79.5px);
+    column-gap: clamp(42.4px, 3.3125rem, 79.5px);
     width: clamp(280px, 21.875rem, 525px);
     margin: clamp(19.2px, 1.5rem, 36px) auto 0;
   }
@@ -2056,7 +1960,8 @@ main .main_gallery .gallery_next::after {
   main .main_access .access_content_wrapper .access_text {
     display: flex;
   }
-  main .main_access .access_content_wrapper .access_text h4, main .main_access .access_content_wrapper .access_text p {
+  main .main_access .access_content_wrapper .access_text h4,
+  main .main_access .access_content_wrapper .access_text p {
     font-weight: 700;
     font-size: clamp(12.8px, 1rem, 24px);
     letter-spacing: clamp(1.024px, 0.08rem, 1.92px);
@@ -2077,16 +1982,13 @@ main .main_gallery .gallery_next::after {
     width: clamp(280px, 21.875rem, 525px);
     height: clamp(200px, 15.625rem, 375px);
   }
-}
-@media screen and (max-width: 430px) {
   main .main_calendar {
     padding: clamp(32px, 2.5rem, 60px) 0;
   }
   main .main_calendar .calendar_content_wrapper {
     width: clamp(299.2px, 23.375rem, 561px);
     flex-direction: column;
-    -moz-column-gap: normal;
-         column-gap: normal;
+    column-gap: normal;
     row-gap: clamp(32px, 2.5rem, 60px);
     margin: clamp(19.2px, 1.5rem, 36px) auto 0;
   }
@@ -2121,13 +2023,8 @@ main .main_gallery .gallery_next::after {
     font-size: clamp(8px, 0.625rem, 15px);
   }
   main .main_calendar .calendar_content_wrapper .calendar .break {
-    color: #CCCCCC;
+    color: rgb(165, 42, 42);
   }
-  main .main_calendar .calendar_content_wrapper .calendar .break1 {
-    color: #0000FF;
-  }
-}
-@media screen and (max-width: 430px) {
   main .main_booking {
     background-color: rgb(247, 247, 247);
     font-family: "Noto Serif JP", "Yu Mincho", serif;
@@ -2142,9 +2039,8 @@ main .main_gallery .gallery_next::after {
     margin: 0 auto;
     padding: clamp(35.2px, 2.75rem, 66px) 0;
   }
-  main .main_booking .booking_content h2, main .main_booking .booking_content h3 {
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
+  main .main_booking .booking_content h2,
+  main .main_booking .booking_content h3 {
     width: fit-content;
     font-weight: 600;
     font-family: "Yu Mincho", "Noto Serif JP", serif;
@@ -2172,8 +2068,7 @@ main .main_gallery .gallery_next::after {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    -moz-column-gap: clamp(8px, 0.625rem, 15px);
-         column-gap: clamp(8px, 0.625rem, 15px);
+    column-gap: clamp(8px, 0.625rem, 15px);
     border-radius: clamp(4px, 0.3125rem, 7.5px);
     padding: clamp(6.4px, 0.5rem, 12px) clamp(12.8px, 1rem, 24px);
     width: clamp(72px, 5.625rem, 135px);
@@ -2181,8 +2076,6 @@ main .main_gallery .gallery_next::after {
   main .main_booking .booking_content .booking_content_link a img {
     width: clamp(25.6px, 2rem, 48px);
   }
-}
-@media screen and (max-width: 430px) {
   footer {
     width: 100%;
     height: auto;
@@ -2204,12 +2097,9 @@ main .main_gallery .gallery_next::after {
     margin: clamp(19.2px, 1.5rem, 36px) 0 0 0;
     letter-spacing: clamp(0.448px, 0.035rem, 0.84px);
     justify-content: center;
-    -moz-column-gap: clamp(8px, 0.625rem, 15px);
-         column-gap: clamp(8px, 0.625rem, 15px);
+    column-gap: clamp(8px, 0.625rem, 15px);
   }
   footer .footer_content_about_wrapper .footer_content_about {
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
     width: fit-content;
     margin: clamp(45.6px, 3.5625rem, 85.5px) 0 0 0;
   }
@@ -2220,7 +2110,8 @@ main .main_gallery .gallery_next::after {
     align-items: normal;
     margin: 0 0 clamp(12.8px, 1rem, 24px) 0;
   }
-  footer .footer_content_about_wrapper .footer_content_about .footer_about_text h4, footer .footer_content_about_wrapper .footer_content_about .footer_about_text p {
+  footer .footer_content_about_wrapper .footer_content_about .footer_about_text h4,
+  footer .footer_content_about_wrapper .footer_content_about .footer_about_text p {
     font-family: "Yu Mincho", "Noto Serif JP", serif;
     font-weight: 500;
     font-size: clamp(12.8px, 1rem, 24px);
@@ -2245,8 +2136,7 @@ main .main_gallery .gallery_next::after {
     display: flex;
     width: clamp(280px, 21.875rem, 525px);
     margin: clamp(12.8px, 1rem, 24px) 0 0 0;
-    -moz-column-gap: clamp(19.2px, 1.5rem, 36px);
-         column-gap: clamp(19.2px, 1.5rem, 36px);
+    column-gap: clamp(19.2px, 1.5rem, 36px);
   }
   footer .footer_article_wrapper .footer_content_article .footer_article div {
     display: flex;
@@ -2284,8 +2174,6 @@ main .main_gallery .gallery_next::after {
   }
   footer .footer_content_copyright {
     width: 100%;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
     height: fit-content;
     font-family: "Yu Mincho", "Noto Serif JP", serif;
     font-weight: 500;
@@ -2315,8 +2203,7 @@ main .main_gallery .gallery_next::after {
   font-size: clamp(25.6px, 2rem, 48px);
   font-weight: 600;
   background: linear-gradient(to right, rgba(183, 143, 54, 0.8), rgba(202, 171, 102, 0.8) 45%, rgba(152, 127, 71, 0.8));
-  -webkit-background-clip: text;
-          background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .main_price .price_header_content h4 {
@@ -2426,8 +2313,7 @@ main .main_gallery .gallery_next::after {
 
 .price_content_title {
   display: flex;
-  -moz-column-gap: clamp(12.8px, 1rem, 24px);
-       column-gap: clamp(12.8px, 1rem, 24px);
+  column-gap: clamp(12.8px, 1rem, 24px);
   margin: clamp(64px, 5rem, 120px) 0 0 0;
   font-family: "Yu Mincho", "Noto Serif JP", serif;
   line-height: 1;
@@ -2443,8 +2329,7 @@ main .main_gallery .gallery_next::after {
   font-size: clamp(28.8px, 2.25rem, 54px);
   letter-spacing: clamp(4.608px, 0.36rem, 8.64px);
   background: linear-gradient(to right, rgba(183, 143, 54, 0.8), rgba(202, 171, 102, 0.8) 45%, rgba(152, 127, 71, 0.8));
-  -webkit-background-clip: text;
-          background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   vertical-align: middle;
 }
@@ -2490,8 +2375,6 @@ main .main_gallery .gallery_next::after {
     width: 100%;
     height: clamp(17.6px, 1.375rem, 33px);
   }
-}
-@media screen and (max-width: 430px) {
   main .main_price .price_content {
     width: clamp(280px, 21.875rem, 525px);
     margin: 0 auto;
@@ -2530,7 +2413,7 @@ main .main_gallery .gallery_next::after {
     min-height: clamp(62.4px, 4.875rem, 117px);
   }
   main .main_price .price_content table tbody tr td:nth-of-type(1) {
-    background: #FFF9F5;
+    background: rgb(239, 218, 198);
   }
   main .main_price .price_content table tbody tr td:nth-of-type(3) {
     display: none;
@@ -2546,8 +2429,6 @@ main .main_gallery .gallery_next::after {
     line-height: 1.2;
     font-size: clamp(16px, 1.25rem, 30px);
   }
-}
-@media screen and (max-width: 430px) {
   main .main_price .price_content_title {
     margin: clamp(32px, 2.5rem, 60px) 0 0 0;
     line-height: 1;
@@ -2564,8 +2445,6 @@ main .main_gallery .gallery_next::after {
     font-size: clamp(25.6px, 2rem, 48px);
     letter-spacing: clamp(3.84px, 0.3rem, 7.2px);
   }
-}
-@media screen and (max-width: 430px) {
   main .price_link {
     gap: clamp(6.4px, 0.5rem, 12px) clamp(8px, 0.625rem, 15px);
     font-size: clamp(9.6px, 0.75rem, 18px);
@@ -2593,8 +2472,7 @@ main .main_gallery .gallery_next::after {
 }
 .main_treatment.main_price h2 {
   display: flex;
-  -moz-column-gap: clamp(68px, 5.3125rem, 127.5px);
-       column-gap: clamp(68px, 5.3125rem, 127.5px);
+  column-gap: clamp(68px, 5.3125rem, 127.5px);
   width: clamp(568px, 44.375rem, 1065px);
 }
 .main_treatment.main_price .treatment_content_wrapper {
@@ -2616,14 +2494,11 @@ main .main_gallery .gallery_next::after {
   margin: clamp(51.2px, 4rem, 96px) 0 0 clamp(176px, 13.75rem, 330px);
 }
 .main_treatment.main_price .treatment_content h3 {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
   width: fit-content;
   font-family: "Yu Mincho", "Noto Serif JP", serif;
   font-size: clamp(28.8px, 2.25rem, 54px);
   background: linear-gradient(to right, rgba(183, 143, 54, 0.8), rgba(202, 171, 102, 0.8) 45%, rgba(152, 127, 71, 0.8));
-  -webkit-background-clip: text;
-          background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .main_treatment.main_price .treatment_content .treatment_border {
@@ -2633,8 +2508,6 @@ main .main_gallery .gallery_next::after {
   margin: clamp(19.2px, 1.5rem, 36px) 0 0 0;
 }
 .main_treatment.main_price .treatment_content a {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
   width: fit-content;
 }
 .main_treatment.main_price .treatment_content .treatment_link {
@@ -2671,8 +2544,7 @@ main .main_gallery .gallery_next::after {
   width: clamp(800px, 62.5rem, 1500px);
 }
 .main_treatment.main_price .treatment_content:nth-of-type(3) .treatment_link_wrapper {
-  -moz-column-gap: clamp(64px, 5rem, 120px);
-       column-gap: clamp(64px, 5rem, 120px);
+  column-gap: clamp(64px, 5rem, 120px);
   row-gap: clamp(19.2px, 1.5rem, 36px);
   flex-wrap: wrap;
   margin: clamp(59.2px, 4.625rem, 111px) 0 0 0;
@@ -2684,8 +2556,7 @@ main .main_gallery .gallery_next::after {
 }
 .main_treatment.main_price .treatment_content:nth-of-type(4) .treatment_link_wrapper {
   width: clamp(280px, 21.875rem, 525px);
-  -moz-column-gap: clamp(24px, 1.875rem, 45px);
-       column-gap: clamp(24px, 1.875rem, 45px);
+  column-gap: clamp(24px, 1.875rem, 45px);
 }
 
 @media screen and (max-width: 430px) {
@@ -2696,8 +2567,7 @@ main .main_gallery .gallery_next::after {
     justify-content: space-between;
     width: clamp(279.2px, 21.8125rem, 523.5px);
     margin: 0 auto;
-    -moz-column-gap: normal;
-         column-gap: normal;
+    column-gap: normal;
   }
   main .main_treatment.main_price .treatment_content_wrapper {
     margin: clamp(32px, 2.5rem, 60px) 0 0 0;
@@ -2720,8 +2590,6 @@ main .main_gallery .gallery_next::after {
     margin: 0;
   }
   main .main_treatment.main_price .treatment_content h3 {
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
     width: fit-content;
     font-size: clamp(19.2px, 1.5rem, 36px);
   }
@@ -2731,8 +2599,6 @@ main .main_gallery .gallery_next::after {
     margin: clamp(12.8px, 1rem, 24px) 0 0 0;
   }
   main .main_treatment.main_price .treatment_content a {
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
     width: fit-content;
   }
   main .main_treatment.main_price .treatment_content .treatment_link {
@@ -2757,18 +2623,18 @@ main .main_gallery .gallery_next::after {
     margin: 0;
   }
   main .main_treatment.main_price .treatment_content:nth-of-type(3),
-main .main_treatment.main_price .treatment_content:nth-of-type(4) {
+  main .main_treatment.main_price .treatment_content:nth-of-type(4) {
     margin: clamp(32px, 2.5rem, 60px) 0 0 0;
     padding: 0;
     width: clamp(280px, 21.875rem, 525px);
   }
   main .main_treatment.main_price .treatment_content:nth-of-type(3) .treatment_link_wrapper,
-main .main_treatment.main_price .treatment_content:nth-of-type(4) .treatment_link_wrapper {
+  main .main_treatment.main_price .treatment_content:nth-of-type(4) .treatment_link_wrapper {
     display: flex;
     flex-shrink: 0;
   }
   main .main_treatment.main_price .treatment_content:nth-of-type(3) .treatment_link,
-main .main_treatment.main_price .treatment_content:nth-of-type(4) .treatment_link {
+  main .main_treatment.main_price .treatment_content:nth-of-type(4) .treatment_link {
     margin: 0;
   }
   main .main_treatment.main_price .treatment_content:nth-of-type(3) {
@@ -2776,14 +2642,13 @@ main .main_treatment.main_price .treatment_content:nth-of-type(4) .treatment_lin
   }
   main .main_treatment.main_price .treatment_content:nth-of-type(3) .treatment_link_wrapper {
     width: clamp(280px, 21.875rem, 525px);
-    -moz-column-gap: clamp(24px, 1.875rem, 45px);
-         column-gap: clamp(24px, 1.875rem, 45px);
+    column-gap: clamp(24px, 1.875rem, 45px);
     row-gap: clamp(16.8px, 1.3125rem, 31.5px);
     flex-wrap: wrap;
     margin: clamp(32px, 2.5rem, 60px) 0 0 0;
   }
   main .main_treatment.main_price .treatment_content:nth-of-type(3) .treatment_link_wrapper,
-main .main_treatment.main_price .treatment_content:nth-of-type(4) .treatment_link_wrapper {
+  main .main_treatment.main_price .treatment_content:nth-of-type(4) .treatment_link_wrapper {
     display: flex;
     flex-shrink: 0;
   }
@@ -2794,8 +2659,6 @@ main .main_treatment.main_price .treatment_content:nth-of-type(4) .treatment_lin
 }
 .main_about_clinic.main_treatment.main_price h2 {
   display: static;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
   width: fit-content;
 }
 .main_about_clinic.main_treatment.main_price .about_clinic_content_wrapper {
@@ -2812,21 +2675,19 @@ main .main_treatment.main_price .treatment_content:nth-of-type(4) .treatment_lin
   background: url("../img/clinic_bg.png") top/cover no-repeat;
   z-index: -1;
 }
-.main_about_clinic.main_treatment.main_price .about_clinic_content h3, .main_about_clinic.main_treatment.main_price .about_clinic_content p {
+.main_about_clinic.main_treatment.main_price .about_clinic_content h3,
+.main_about_clinic.main_treatment.main_price .about_clinic_content p {
   font-family: "Yu Mincho", "Noto Serif JP", serif;
   line-height: 1.6;
   letter-spacing: clamp(1.024px, 0.08rem, 1.92px);
 }
 .main_about_clinic.main_treatment.main_price .about_clinic_content h3 {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
   width: fit-content;
   font-weight: 600;
   font-size: clamp(25.6px, 2rem, 48px);
   margin: 0 auto;
   background: linear-gradient(to right, rgba(183, 143, 54, 0.8), rgba(202, 171, 102, 0.8) 45%, rgba(152, 127, 71, 0.8));
-  -webkit-background-clip: text;
-          background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .main_about_clinic.main_treatment.main_price .about_clinic_content p {
@@ -2840,29 +2701,23 @@ main .main_treatment.main_price .treatment_content:nth-of-type(4) .treatment_lin
   margin: 0;
 }
 .main_about_clinic.main_treatment.main_price .about_clinic_content_wrapper:nth-of-type(3) > h3 {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
   width: fit-content;
   font-size: clamp(51.2px, 4rem, 96px);
   font-weight: 200;
   font-family: "cannia";
   background: linear-gradient(to right, rgba(183, 143, 54, 0.8), rgba(202, 171, 102, 0.8) 45%, rgba(152, 127, 71, 0.8));
-  -webkit-background-clip: text;
-          background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   letter-spacing: clamp(8.192px, 0.64rem, 15.36px);
   margin: 0 auto;
 }
 .main_about_clinic.main_treatment.main_price .about_clinic_content_wrapper:nth-of-type(3) > h4 {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
   width: fit-content;
   font-size: clamp(19.2px, 1.5rem, 36px);
   font-family: "Noto Serif JP", "Yu Mincho", "游明朝体", serif;
   font-weight: 400;
   background: linear-gradient(to right, rgba(183, 143, 54, 0.8), rgba(202, 171, 102, 0.8) 45%, rgba(152, 127, 71, 0.8));
-  -webkit-background-clip: text;
-          background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   margin: clamp(12.8px, 1rem, 24px) auto 0;
   letter-spacing: clamp(3.072px, 0.24rem, 5.76px);
@@ -2876,8 +2731,7 @@ main .main_treatment.main_price .treatment_content:nth-of-type(4) .treatment_lin
 .main_about_clinic.main_treatment.main_price .about_clinic_content_wrapper:nth-of-type(3) .about_clinic_content {
   display: flex;
   justify-content: center;
-  -moz-column-gap: clamp(24px, 1.875rem, 45px);
-       column-gap: clamp(24px, 1.875rem, 45px);
+  column-gap: clamp(24px, 1.875rem, 45px);
   margin: clamp(51.2px, 4rem, 96px) 0 0 0;
 }
 .main_about_clinic.main_treatment.main_price .about_clinic_content_wrapper:nth-of-type(3) .about_clinic_content h4 {
@@ -2958,8 +2812,7 @@ main .main_treatment.main_price .treatment_content:nth-of-type(4) .treatment_lin
   align-items: center;
   width: clamp(160px, 12.5rem, 300px);
   margin: 0 auto;
-  -moz-column-gap: clamp(19.2px, 1.5rem, 36px);
-       column-gap: clamp(19.2px, 1.5rem, 36px);
+  column-gap: clamp(19.2px, 1.5rem, 36px);
 }
 .main_case .case_content_wrapper .case_content_title img {
   width: clamp(43.2px, 3.375rem, 81px);
@@ -2969,16 +2822,13 @@ main .main_treatment.main_price .treatment_content:nth-of-type(4) .treatment_lin
   transform: scale(-1, 1);
 }
 .main_case .case_content_wrapper .case_content_title h3 {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
   width: fit-content;
   font-family: "Yu Mincho", "Noto Serif JP", serif;
   font-size: clamp(25.6px, 2rem, 48px);
   font-weight: 600;
   letter-spacing: clamp(1.024px, 0.08rem, 1.92px);
   background: linear-gradient(to right, rgba(183, 143, 54, 0.8), rgba(202, 171, 102, 0.8) 45%, rgba(152, 127, 71, 0.8));
-  -webkit-background-clip: text;
-          background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .main_case .case_content_wrapper .case_link_wrapper {
@@ -2994,8 +2844,7 @@ main .main_treatment.main_price .treatment_content:nth-of-type(4) .treatment_lin
   display: flex;
   justify-content: center;
   align-items: center;
-  -moz-column-gap: clamp(16px, 1.25rem, 30px);
-       column-gap: clamp(16px, 1.25rem, 30px);
+  column-gap: clamp(16px, 1.25rem, 30px);
   width: clamp(150.4px, 11.75rem, 282px);
   margin: clamp(64px, 5rem, 120px) auto 0;
 }
@@ -3081,8 +2930,7 @@ main .main_treatment.main_price .treatment_content:nth-of-type(4) .treatment_lin
     align-items: center;
     width: clamp(160px, 12.5rem, 300px);
     margin: 0 auto;
-    -moz-column-gap: clamp(19.2px, 1.5rem, 36px);
-         column-gap: clamp(19.2px, 1.5rem, 36px);
+    column-gap: clamp(19.2px, 1.5rem, 36px);
   }
   main .main_case .case_content_wrapper .case_content_title img {
     width: clamp(43.2px, 3.375rem, 81px);
@@ -3092,16 +2940,13 @@ main .main_treatment.main_price .treatment_content:nth-of-type(4) .treatment_lin
     transform: scale(-1, 1);
   }
   main .main_case .case_content_wrapper .case_content_title h3 {
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
     width: fit-content;
     font-family: "Yu Mincho", "Noto Serif JP", serif;
     font-size: clamp(25.6px, 2rem, 48px);
     font-weight: 600;
     letter-spacing: clamp(1.024px, 0.08rem, 1.92px);
     background: linear-gradient(to right, rgba(183, 143, 54, 0.8), rgba(202, 171, 102, 0.8) 45%, rgba(152, 127, 71, 0.8));
-    -webkit-background-clip: text;
-            background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
   }
   main .main_case .case_content_wrapper .case_link_wrapper {
@@ -3110,8 +2955,7 @@ main .main_treatment.main_price .treatment_content:nth-of-type(4) .treatment_lin
     justify-content: space-between;
     flex-wrap: wrap;
     row-gap: clamp(12.8px, 1rem, 24px);
-    -moz-column-gap: clamp(24px, 1.875rem, 45px);
-         column-gap: clamp(24px, 1.875rem, 45px);
+    column-gap: clamp(24px, 1.875rem, 45px);
     font-family: "Noto Serif JP", "Yu Mincho", serif;
     margin: clamp(19.2px, 1.5rem, 36px) auto clamp(32px, 2.5rem, 60px);
   }
@@ -3169,8 +3013,7 @@ main .main_treatment.main_price .treatment_content:nth-of-type(4) .treatment_lin
   font-size: clamp(28.8px, 2.25rem, 54px);
   font-weight: 600;
   background: linear-gradient(to right, rgba(183, 143, 54, 0.8), rgba(202, 171, 102, 0.8) 45%, rgba(152, 127, 71, 0.8));
-  -webkit-background-clip: text;
-          background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .main_about_case .about_case_content_wrapper .about_case_border {
@@ -3320,7 +3163,7 @@ main .main_treatment.main_price .treatment_content:nth-of-type(4) .treatment_lin
     margin: 0 auto;
   }
   main .main_about_case .about_case_content_wrapper .about_case_img_wrapper .about_case_pagenation .prev,
-main .main_about_case .about_case_content_wrapper .about_case_img_wrapper .about_case_pagenation .next {
+  main .main_about_case .about_case_content_wrapper .about_case_img_wrapper .about_case_pagenation .next {
     top: clamp(16px, 1.25rem, 30px);
   }
   main .main_about_case .about_case_content_wrapper .about_case_img_wrapper .about_case_pagenation .prev {
@@ -3351,7 +3194,7 @@ main .main_about_case .about_case_content_wrapper .about_case_img_wrapper .about
     background: rgb(175, 148, 84);
   }
   main .main_about_case .about_case_content_wrapper .about_case_img_wrapper .about_case_pagenation .page_dots div:nth-of-type(2),
-main .main_about_case .about_case_content_wrapper .about_case_img_wrapper .about_case_pagenation .page_dots div:nth-of-type(3) {
+  main .main_about_case .about_case_content_wrapper .about_case_img_wrapper .about_case_pagenation .page_dots div:nth-of-type(3) {
     width: clamp(8px, 0.625rem, 15px);
     height: clamp(8px, 0.625rem, 15px);
     background-color: rgb(217, 217, 217);
@@ -3549,8 +3392,7 @@ main .main_flow .flow_content_bgcolor {
 main .main_flow .flow_content {
   display: flex;
   width: clamp(800px, 62.5rem, 1500px);
-  -moz-column-gap: clamp(38.4px, 3rem, 72px);
-       column-gap: clamp(38.4px, 3rem, 72px);
+  column-gap: clamp(38.4px, 3rem, 72px);
 }
 main .main_flow .flow_content .flow_content_img {
   display: flex;
@@ -3561,8 +3403,7 @@ main .main_flow .flow_content .flow_content_img img {
   height: clamp(160px, 12.5rem, 300px);
   border: clamp(0.8px, 0.0625rem, 1.5px) solid rgb(192, 157, 123);
   margin: auto 0;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   box-shadow: 0 clamp(3.2px, 0.25rem, 6px) clamp(3.2px, 0.25rem, 6px) rgba(0, 0, 0, 0.05);
   background-color: rgb(217, 217, 217);
 }
@@ -3598,8 +3439,6 @@ main .main_flow .flow_content .flow_content_text a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
   width: fit-content;
   height: clamp(48px, 3.75rem, 90px);
   border: clamp(0.8px, 0.0625rem, 1.5px) solid rgb(175, 148, 84);
@@ -3612,12 +3451,9 @@ main .main_flow .flow_content .flow_content_text a {
 }
 main .main_flow .flow_content .flow_content_text a > div {
   display: flex;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
   width: fit-content;
   align-items: center;
-  -moz-column-gap: clamp(8.8px, 0.6875rem, 16.5px);
-       column-gap: clamp(8.8px, 0.6875rem, 16.5px);
+  column-gap: clamp(8.8px, 0.6875rem, 16.5px);
   padding: 0 clamp(12.8px, 1rem, 24px);
   line-height: 1;
 }
@@ -3625,14 +3461,12 @@ main .main_flow .flow_content .flow_content_text a > div div {
   width: clamp(3.2px, 0.25rem, 6px);
   height: clamp(8px, 0.625rem, 15px);
   background-color: rgb(175, 148, 84);
-  -webkit-clip-path: polygon(15% 5%, 100% 50%, 15% 95%);
-          clip-path: polygon(15% 5%, 100% 50%, 15% 95%);
+  clip-path: polygon(15% 5%, 100% 50%, 15% 95%);
 }
 main .main_flow .flow_polygon {
   width: clamp(24px, 1.875rem, 45px);
   height: clamp(19.2px, 1.5rem, 36px);
-  -webkit-clip-path: polygon(0 6.6666666667%, 100% 6.6666666667%, 50% 100%);
-          clip-path: polygon(0 6.6666666667%, 100% 6.6666666667%, 50% 100%);
+  clip-path: polygon(0 6.6666666667%, 100% 6.6666666667%, 50% 100%);
   background-color: rgb(175, 148, 84);
   margin: clamp(16px, 1.25rem, 30px) auto;
 }
@@ -3657,8 +3491,7 @@ main .main_flow .flow_polygon {
     display: flex;
     flex-direction: column;
     width: clamp(240px, 18.75rem, 450px);
-    -moz-column-gap: normal;
-         column-gap: normal;
+    column-gap: normal;
   }
   main .main_flow .flow_content .flow_content_img {
     display: flex;
@@ -3670,8 +3503,7 @@ main .main_flow .flow_polygon {
     height: clamp(120px, 9.375rem, 225px);
     border: clamp(0.8px, 0.0625rem, 1.5px) solid rgb(192, 157, 123);
     margin: auto 0;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
     box-shadow: 0 clamp(3.2px, 0.25rem, 6px) clamp(3.2px, 0.25rem, 6px) rgba(0, 0, 0, 0.05);
     background-color: rgb(217, 217, 217);
   }
@@ -3710,8 +3542,6 @@ main .main_flow .flow_polygon {
     margin: clamp(6.4px, 0.5rem, 12px) auto 0;
     justify-content: space-between;
     align-items: center;
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
     width: fit-content;
     height: clamp(48px, 3.75rem, 90px);
     border: clamp(0.8px, 0.0625rem, 1.5px) solid rgb(175, 148, 84);
@@ -3724,12 +3554,9 @@ main .main_flow .flow_polygon {
   }
   main .main_flow .flow_content .flow_content_text a > div {
     display: flex;
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
     width: fit-content;
     align-items: center;
-    -moz-column-gap: clamp(8.8px, 0.6875rem, 16.5px);
-         column-gap: clamp(8.8px, 0.6875rem, 16.5px);
+    column-gap: clamp(8.8px, 0.6875rem, 16.5px);
     padding: 0 clamp(12.8px, 1rem, 24px);
     line-height: 1;
   }
@@ -3737,14 +3564,12 @@ main .main_flow .flow_polygon {
     width: clamp(3.2px, 0.25rem, 6px);
     height: clamp(8px, 0.625rem, 15px);
     background-color: rgb(175, 148, 84);
-    -webkit-clip-path: polygon(15% 5%, 100% 50%, 15% 95%);
-            clip-path: polygon(15% 5%, 100% 50%, 15% 95%);
+    clip-path: polygon(15% 5%, 100% 50%, 15% 95%);
   }
   main .main_flow .flow_polygon {
     width: clamp(24px, 1.875rem, 45px);
     height: clamp(19.2px, 1.5rem, 36px);
-    -webkit-clip-path: polygon(0 6.6666666667%, 100% 6.6666666667%, 50% 100%);
-            clip-path: polygon(0 6.6666666667%, 100% 6.6666666667%, 50% 100%);
+    clip-path: polygon(0 6.6666666667%, 100% 6.6666666667%, 50% 100%);
     background-color: rgb(175, 148, 84);
     margin: clamp(16px, 1.25rem, 30px) auto;
   }
@@ -3784,7 +3609,8 @@ main .main_flow .flow_polygon {
 .main_aftercare .aftercare_content .aftercare_content_text {
   width: clamp(352px, 27.5rem, 660px);
 }
-.main_aftercare .aftercare_content .aftercare_content_text h3, .main_aftercare .aftercare_content .aftercare_content_text p {
+.main_aftercare .aftercare_content .aftercare_content_text h3,
+.main_aftercare .aftercare_content .aftercare_content_text p {
   font-weight: 500;
   line-height: 1.6;
 }
@@ -3850,7 +3676,8 @@ main .main_flow .flow_polygon {
     width: clamp(280px, 21.875rem, 525px);
     margin: clamp(19.2px, 1.5rem, 36px) 0 0 0;
   }
-  .main_aftercare .aftercare_content .aftercare_content_text h3, .main_aftercare .aftercare_content .aftercare_content_text p {
+  .main_aftercare .aftercare_content .aftercare_content_text h3,
+  .main_aftercare .aftercare_content .aftercare_content_text p {
     font-weight: 500;
     line-height: 1.6;
   }
@@ -4020,8 +3847,7 @@ main .main_flow .flow_polygon {
   justify-content: center;
 }
 .main_faq .faq_content .faq_link a {
-  -moz-column-gap: clamp(19.2px, 1.5rem, 36px);
-       column-gap: clamp(19.2px, 1.5rem, 36px);
+  column-gap: clamp(19.2px, 1.5rem, 36px);
 }
 .main_faq .faq_content .faq_link .price_arrow {
   position: relative;
@@ -4047,13 +3873,13 @@ main .main_flow .flow_polygon {
     margin: 0 auto clamp(14.4px, 1.125rem, 27px);
   }
   main .main_faq .faq_content .question,
-main .main_faq .faq_content .answer {
+  main .main_faq .faq_content .answer {
     display: flex;
     position: relative;
     border-radius: clamp(8px, 0.625rem, 15px);
   }
   main .main_faq .faq_content .question .circle,
-main .main_faq .faq_content .answer .circle {
+  main .main_faq .faq_content .answer .circle {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -4068,7 +3894,7 @@ main .main_faq .faq_content .answer .circle {
     flex-shrink: 0;
   }
   main .main_faq .faq_content .question p,
-main .main_faq .faq_content .answer p {
+  main .main_faq .faq_content .answer p {
     font-family: "Yu Mincho", "Noto Serif JP", serif;
     font-weight: 500;
     color: rgb(102, 102, 102);
@@ -4079,16 +3905,13 @@ main .main_faq .faq_content .answer p {
     justify-content: flex-start;
     align-items: center;
     cursor: pointer;
-    -moz-column-gap: clamp(19.2px, 1.5rem, 36px);
-         column-gap: clamp(19.2px, 1.5rem, 36px);
+    column-gap: clamp(19.2px, 1.5rem, 36px);
   }
   main .main_faq .faq_content .question .circle {
     background-color: rgb(173, 127, 82);
     color: white;
   }
   main .main_faq .faq_content .question p {
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
     width: fit-content;
     font-size: clamp(11.2px, 0.875rem, 21px);
     line-height: 1.6;
@@ -4173,8 +3996,6 @@ main .main_faq .faq_content .answer p {
     flex-shrink: 0;
   }
   main .main_faq .faq_content .answer p {
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
     width: fit-content;
     font-size: clamp(11.2px, 0.875rem, 21px);
     letter-spacing: clamp(0.448px, 0.035rem, 0.84px);
@@ -4184,8 +4005,7 @@ main .main_faq .faq_content .answer p {
     justify-content: center;
   }
   main .main_faq .faq_content .faq_link a {
-    -moz-column-gap: clamp(19.2px, 1.5rem, 36px);
-         column-gap: clamp(19.2px, 1.5rem, 36px);
+    column-gap: clamp(19.2px, 1.5rem, 36px);
   }
   main .main_faq .faq_content .faq_link .price_arrow {
     position: relative;
@@ -4203,7 +4023,7 @@ main .main_faq .faq_content .answer p {
   padding: clamp(64px, 5rem, 120px) 0;
 }
 .main_doctor .doctor_content_wrapper:not(:nth-of-type(2)) img {
-  background-color: #D9D9D9;
+  background-color: #d9d9d9;
 }
 .main_doctor .doctor_content_wrapper:nth-of-type(3) img {
   width: clamp(384px, 30rem, 720px);
@@ -4227,7 +4047,7 @@ main .main_faq .faq_content .answer p {
   color: #666666;
 }
 .main_doctor .doctor_content_wrapper:nth-of-type(4) {
-  background-color: #FFF9F5;
+  background-color: #fff9f5;
 }
 .main_doctor .doctor_content_wrapper:nth-of-type(4) img {
   width: clamp(144px, 11.25rem, 270px);
@@ -4245,29 +4065,23 @@ main .main_faq .faq_content .answer p {
   padding: clamp(64px, 5rem, 120px) 0;
 }
 .doctor_content_wrapper > h2 {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
   width: fit-content;
   font-size: clamp(51.2px, 4rem, 96px);
   font-weight: 200;
   font-family: "cannia";
   background: linear-gradient(to right, rgba(183, 143, 54, 0.8), rgba(202, 171, 102, 0.8) 45%, rgba(152, 127, 71, 0.8));
-  -webkit-background-clip: text;
-          background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   letter-spacing: clamp(8.192px, 0.64rem, 15.36px);
   margin: 0 auto;
 }
 .doctor_content_wrapper > h3 {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
   width: fit-content;
   font-size: clamp(19.2px, 1.5rem, 36px);
   font-family: "Noto Serif JP", "Yu Mincho", "游明朝体", serif;
   font-weight: 400;
   background: linear-gradient(to right, rgba(183, 143, 54, 0.8), rgba(202, 171, 102, 0.8) 45%, rgba(152, 127, 71, 0.8));
-  -webkit-background-clip: text;
-          background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   margin: clamp(12.8px, 1rem, 24px) auto 0;
   letter-spacing: clamp(3.072px, 0.24rem, 5.76px);
@@ -4300,16 +4114,13 @@ main .main_faq .faq_content .answer p {
   position: relative;
 }
 .doctor_content h3 {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
   width: fit-content;
   font-family: "Noto Serif JP", "Yu Mincho", serif;
   font-weight: 800;
   font-size: clamp(19.2px, 1.5rem, 36px);
   line-height: 1.7;
   background: linear-gradient(to right, rgba(183, 143, 54, 0.8), rgba(202, 171, 102, 0.8) 45%, rgba(152, 127, 71, 0.8));
-  -webkit-background-clip: text;
-          background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .doctor_content h4 {
@@ -4317,7 +4128,7 @@ main .main_faq .faq_content .answer p {
   font-weight: 500;
   font-size: clamp(12.8px, 1rem, 24px);
   line-height: 1.6;
-  color: #CCCCCC;
+  color: #cccccc;
   margin: clamp(19.2px, 1.5rem, 36px) 0 0 0;
 }
 .doctor_content h4:nth-of-type(1) {
@@ -4341,7 +4152,7 @@ main .main_faq .faq_content .answer p {
   font-family: "cannia", sans-serif;
   font-weight: 400;
   line-height: 1;
-  color: #CCCCCC;
+  color: #cccccc;
   position: absolute;
   top: clamp(136.8px, 10.6875rem, 256.5px);
   left: clamp(106.4px, 8.3125rem, 199.5px);
@@ -4363,18 +4174,16 @@ main .main_faq .faq_content .answer p {
 .doctor_content .doctor_content_media {
   display: flex;
   justify-content: center;
-  -moz-column-gap: clamp(19.2px, 1.5rem, 36px);
-       column-gap: clamp(19.2px, 1.5rem, 36px);
+  column-gap: clamp(19.2px, 1.5rem, 36px);
   margin: clamp(19.2px, 1.5rem, 36px) 0 0 0;
 }
 .doctor_content .doctor_content_media a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  -moz-column-gap: clamp(25.6px, 2rem, 48px);
-       column-gap: clamp(25.6px, 2rem, 48px);
+  column-gap: clamp(25.6px, 2rem, 48px);
   padding: clamp(9.6px, 0.75rem, 18px) clamp(16px, 1.25rem, 30px);
-  border: clamp(0.8px, 0.0625rem, 1.5px) solid #AD7F52;
+  border: clamp(0.8px, 0.0625rem, 1.5px) solid #ad7f52;
   border-radius: clamp(16px, 1.25rem, 30px);
 }
 .doctor_content .doctor_content_media a div {
@@ -4402,7 +4211,7 @@ main .main_faq .faq_content .answer p {
     padding: clamp(32px, 2.5rem, 60px) 0;
   }
   main .main_doctor .doctor_content_wrapper:not(:nth-of-type(2)) img {
-    background-color: #D9D9D9;
+    background-color: #d9d9d9;
   }
   main .main_doctor .doctor_content_wrapper:nth-of-type(3) img {
     width: clamp(384px, 30rem, 720px);
@@ -4426,7 +4235,7 @@ main .main_faq .faq_content .answer p {
     color: #666666;
   }
   main .main_doctor .doctor_content_wrapper:nth-of-type(4) {
-    background-color: #FFF9F5;
+    background-color: #fff9f5;
   }
   main .main_doctor .doctor_content_wrapper:nth-of-type(4) img {
     width: clamp(144px, 11.25rem, 270px);
@@ -4443,29 +4252,23 @@ main .main_faq .faq_content .answer p {
     padding: clamp(32px, 2.5rem, 60px) 0;
   }
   main .main_doctor .doctor_content_wrapper > h2 {
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
     width: fit-content;
     font-size: clamp(51.2px, 4rem, 96px);
     font-weight: 200;
     font-family: "cannia";
     background: linear-gradient(to right, rgba(183, 143, 54, 0.8), rgba(202, 171, 102, 0.8) 45%, rgba(152, 127, 71, 0.8));
-    -webkit-background-clip: text;
-            background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     letter-spacing: clamp(8.192px, 0.64rem, 15.36px);
     margin: 0 auto;
   }
   main .main_doctor .doctor_content_wrapper > h3 {
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
     width: fit-content;
     font-size: clamp(19.2px, 1.5rem, 36px);
     font-family: "Noto Serif JP", "Yu Mincho", "游明朝体", serif;
     font-weight: 400;
     background: linear-gradient(to right, rgba(183, 143, 54, 0.8), rgba(202, 171, 102, 0.8) 45%, rgba(152, 127, 71, 0.8));
-    -webkit-background-clip: text;
-            background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     margin: clamp(12.8px, 1rem, 24px) auto 0;
     letter-spacing: clamp(3.072px, 0.24rem, 5.76px);
@@ -4529,8 +4332,7 @@ main .main_faq .faq_content .answer p {
     display: flex;
     justify-content: center;
     flex-direction: row;
-    -moz-column-gap: clamp(20px, 1.5625rem, 37.5px);
-         column-gap: clamp(20px, 1.5625rem, 37.5px);
+    column-gap: clamp(20px, 1.5625rem, 37.5px);
     width: clamp(312px, 24.375rem, 585px);
   }
   main .main_doctor .doctor_content_wrapper:nth-of-type(4) .doctor_content img {
@@ -4550,16 +4352,13 @@ main .main_faq .faq_content .answer p {
     overflow: hidden;
   }
   main .main_doctor .doctor_content h3 {
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
     width: fit-content;
     font-family: "Noto Serif JP", "Yu Mincho", serif;
     font-weight: 800;
     font-size: clamp(19.2px, 1.5rem, 36px);
     line-height: 1.7;
     background: linear-gradient(to right, rgba(183, 143, 54, 0.8), rgba(202, 171, 102, 0.8) 45%, rgba(152, 127, 71, 0.8));
-    -webkit-background-clip: text;
-            background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     margin: clamp(12.8px, 1rem, 24px) 0 0 0;
   }
@@ -4568,7 +4367,7 @@ main .main_faq .faq_content .answer p {
     font-weight: 500;
     font-size: clamp(12.8px, 1rem, 24px);
     line-height: 1;
-    color: #CCCCCC;
+    color: #cccccc;
     margin: clamp(12.8px, 1rem, 24px) 0 0 0;
   }
   main .main_doctor .doctor_content h4:nth-of-type(1) {
@@ -4602,7 +4401,7 @@ main .main_faq .faq_content .answer p {
     font-family: "cannia", sans-serif;
     font-weight: 400;
     line-height: 1;
-    color: #CCCCCC;
+    color: #cccccc;
     position: absolute;
     top: clamp(560.8px, 43.8125rem, 1051.5px);
     left: clamp(72px, 5.625rem, 135px);
@@ -4632,26 +4431,21 @@ main .main_faq .faq_content .answer p {
 }
 @media screen and (max-width: 430px) {
   main .main_doctor .doctor_content .doctor_content_media_wrapper > img:nth-of-type(2) {
-    -o-object-fit: contain;
-       object-fit: contain;
+    object-fit: contain;
   }
-}
-@media screen and (max-width: 430px) {
   main .main_doctor .doctor_content .doctor_content_media {
     display: flex;
     justify-content: center;
-    -moz-column-gap: clamp(12.8px, 1rem, 24px);
-         column-gap: clamp(12.8px, 1rem, 24px);
+    column-gap: clamp(12.8px, 1rem, 24px);
     margin: clamp(20.8px, 1.625rem, 39px) 0 0 0;
   }
   main .main_doctor .doctor_content .doctor_content_media a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    -moz-column-gap: clamp(16px, 1.25rem, 30px);
-         column-gap: clamp(16px, 1.25rem, 30px);
+    column-gap: clamp(16px, 1.25rem, 30px);
     padding: clamp(8px, 0.625rem, 15px);
-    border: clamp(0.8px, 0.0625rem, 1.5px) solid #AD7F52;
+    border: clamp(0.8px, 0.0625rem, 1.5px) solid #ad7f52;
     border-radius: clamp(16px, 1.25rem, 30px);
   }
   main .main_doctor .doctor_content .doctor_content_media a div {
@@ -4703,20 +4497,16 @@ main .main_faq .faq_content .answer p {
 .main_policy .policy_content_wrapper .policy_content .policy_content_title {
   display: flex;
   align-items: center;
-  -moz-column-gap: clamp(6.4px, 0.5rem, 12px);
-       column-gap: clamp(6.4px, 0.5rem, 12px);
+  column-gap: clamp(6.4px, 0.5rem, 12px);
 }
 .main_policy .policy_content_wrapper .policy_content .policy_content_title h3 {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
   width: fit-content;
   font-size: clamp(19.2px, 1.5rem, 36px);
   font-weight: 600;
   letter-spacing: clamp(1.152px, 0.09rem, 2.16px);
   line-height: 1;
   background: linear-gradient(to right, rgba(183, 143, 54, 0.8), rgba(202, 171, 102, 0.8) 45%, rgba(152, 127, 71, 0.8));
-  -webkit-background-clip: text;
-          background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .main_policy .policy_content_wrapper .policy_content .policy_border {
@@ -4781,20 +4571,16 @@ main .main_faq .faq_content .answer p {
   .main_policy .policy_content_wrapper .policy_content .policy_content_title {
     display: flex;
     align-items: normal;
-    -moz-column-gap: clamp(6.4px, 0.5rem, 12px);
-         column-gap: clamp(6.4px, 0.5rem, 12px);
+    column-gap: clamp(6.4px, 0.5rem, 12px);
   }
   .main_policy .policy_content_wrapper .policy_content .policy_content_title h3 {
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
     width: fit-content;
     font-size: clamp(16px, 1.25rem, 30px);
     font-weight: 600;
     letter-spacing: clamp(2.56px, 0.2rem, 4.8px);
     line-height: 1;
     background: linear-gradient(to right, rgba(183, 143, 54, 0.8), rgba(202, 171, 102, 0.8) 45%, rgba(152, 127, 71, 0.8));
-    -webkit-background-clip: text;
-            background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
   }
   .main_policy .policy_content_wrapper .policy_content .policy_border {
@@ -4834,37 +4620,24 @@ main .main_faq .faq_content .answer p {
 .main_column .column_content_header {
   padding: clamp(64px, 5rem, 120px) 0;
 }
-.main_column .main_column_bg {
-    width: 100%;
-    height: clamp(64px, 5rem, 120px);
-    background: url(../img/content_bg_origin.jpg) center / cover no-repeat;
-    margin: clamp(64px, 5rem, 120px) 0 0 0;
-    opacity: 30%;
-}
 .main_column .column_content_header > h2 {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
   width: fit-content;
   font-size: clamp(51.2px, 4rem, 96px);
   font-weight: 200;
   font-family: "cannia";
   background: linear-gradient(to right, rgba(183, 143, 54, 0.8), rgba(202, 171, 102, 0.8) 45%, rgba(152, 127, 71, 0.8));
-  -webkit-background-clip: text;
-          background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   letter-spacing: clamp(8.192px, 0.64rem, 15.36px);
   margin: 0 auto;
 }
 .main_column .column_content_header > h3 {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
   width: fit-content;
   font-size: clamp(19.2px, 1.5rem, 36px);
   font-family: "Noto Serif JP", "Yu Mincho", "游明朝体", serif;
   font-weight: 400;
   background: linear-gradient(to right, rgba(183, 143, 54, 0.8), rgba(202, 171, 102, 0.8) 45%, rgba(152, 127, 71, 0.8));
-  -webkit-background-clip: text;
-          background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   margin: clamp(12.8px, 1rem, 24px) auto 0;
   letter-spacing: clamp(3.072px, 0.24rem, 5.76px);
@@ -4886,9 +4659,9 @@ main .main_faq .faq_content .answer p {
 }
 .main_column .column_content_wrapper .column_content {
   display: flex;
+  justify-content: space-between;
   width: clamp(800px, 62.5rem, 1500px);
   margin: 0 auto;
-    gap: 2rem;
 }
 .main_column .column_content_wrapper .column_content .column_content_button {
   width: clamp(128px, 10rem, 240px);
@@ -4941,17 +4714,10 @@ main .main_faq .faq_content .answer p {
   border: clamp(0.8px, 0.0625rem, 1.5px) solid rgb(192, 157, 123);
   border-radius: clamp(3.2px, 0.25rem, 6px);
 }
-
-.main_column .column_content_wrapper .column_content .column_content_button .column_category_link .active {
-    background-color: #c09d7b;
-    color: #fff;
-}
 .main_column .column_content_wrapper .column_content .column_article {
   display: flex;
   align-items: center;
   margin: clamp(19.2px, 1.5rem, 36px) 0 0 0;
-    flex-direction: row;
-    gap: 2rem;
 }
 .main_column .column_content_wrapper .column_content .column_article img {
   width: clamp(128px, 10rem, 240px);
@@ -4960,7 +4726,7 @@ main .main_faq .faq_content .answer p {
   background-color: rgb(217, 217, 217);
 }
 .main_column .column_content_wrapper .column_content .column_article .column_article_text {
-/*   margin: 0 0 0 clamp(19.2px, 1.5rem, 36px); */
+  margin: 0 0 0 clamp(19.2px, 1.5rem, 36px);
 }
 .main_column .column_content_wrapper .column_content .column_article .column_article_text h4 {
   font-family: "Noto Serif JP", "Yu Mincho", serif;
@@ -4974,8 +4740,7 @@ main .main_faq .faq_content .answer p {
 .main_column .column_content_wrapper .column_content .column_article .column_article_text div {
   display: flex;
   align-items: center;
-  -moz-column-gap: clamp(12.8px, 1rem, 24px);
-       column-gap: clamp(12.8px, 1rem, 24px);
+  column-gap: clamp(12.8px, 1rem, 24px);
 }
 .main_column .column_content_wrapper .column_content .column_article .column_article_text div time {
   font-family: "cannia", sans-serif;
@@ -5004,7 +4769,7 @@ main .main_faq .faq_content .answer p {
   position: relative;
   border: clamp(0.8px, 0.0625rem, 1.5px) solid rgb(192, 157, 123);
   border-radius: 50%;
-/*   margin: 0 0 0 clamp(62.4px, 4.875rem, 117px); */
+  margin: 0 0 0 clamp(62.4px, 4.875rem, 117px);
 }
 .main_column .column_content_wrapper .column_content .column_article > a div {
   position: absolute;
@@ -5039,7 +4804,7 @@ main .main_faq .faq_content .answer p {
 .main_column .column_content_wrapper .column_content .column_border {
   width: 100%;
   height: clamp(0.8px, 0.0625rem, 1.5px);
-  background-color: #FFF9F5;
+  background-color: rgb(239, 218, 198);
   margin: clamp(19.2px, 1.5rem, 36px) 0 0 0;
 }
 
@@ -5047,8 +4812,7 @@ main .main_faq .faq_content .answer p {
   display: flex;
   justify-content: center;
   align-items: center;
-  -moz-column-gap: clamp(16px, 1.25rem, 30px);
-       column-gap: clamp(16px, 1.25rem, 30px);
+  column-gap: clamp(16px, 1.25rem, 30px);
   margin: clamp(32px, 2.5rem, 60px) 0 0 0;
   font-family: "cannia", sans-serif;
   line-height: 1;
@@ -5082,48 +4846,6 @@ main .main_faq .faq_content .answer p {
 }
 
 @media screen and (max-width: 430px) {
-	.main_column .column_content_wrapper .column_content {
-		display: flex;
-		width: 100%;
-		margin: 0;
-		gap: 2rem;
-		flex-direction: column-reverse;
-        align-items: center;
-	}
-	.main_column .column_content_wrapper .column_content .column_article {
-		display: flex;
-		align-items: center;
-		margin: 0;
-		flex-direction: row;
-		gap: 1rem;
-		width: 90%;
-		justify-content: center;
-	}
-	.main_column .column_content_wrapper .column_content .column_article > a {
-		width: clamp(32px, 2.5rem, 60px);
-		height: clamp(32px, 2.5rem, 60px);
-		position: relative;
-		border: clamp(0.8px, 0.0625rem, 1.5px) solid rgb(192, 157, 123);
-		border-radius: 50%;
-		/* margin: 0 0 0 clamp(62.4px, 4.875rem, 117px); */
-		display: none;
-	}
-	.main_column .column_content_wrapper .column_content .column_artice_wrapper {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		
-	}
-	.main_column .column_content_wrapper .column_content .column_article .column_article_text {
-		margin: 0;
-	}
-	.main_column .column_content_wrapper .column_content .column_article img {
-		width: 180px;
-        height: fit-content;
-        border-radius: clamp(8px, 0.625rem, 15px);
-        background-color: rgb(217, 217, 217);
-	}
-	
   main .main_column {
     padding: 0;
   }
@@ -5131,29 +4853,23 @@ main .main_faq .faq_content .answer p {
     padding: clamp(32px, 2.5rem, 60px) 0;
   }
   main .main_column .column_content_header > h2 {
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
     width: fit-content;
     font-size: clamp(25.6px, 2rem, 48px);
     font-weight: 400;
     font-family: "cannia";
     background: linear-gradient(to right, rgba(183, 143, 54, 0.8), rgba(202, 171, 102, 0.8) 45%, rgba(152, 127, 71, 0.8));
-    -webkit-background-clip: text;
-            background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     letter-spacing: clamp(4.096px, 0.32rem, 7.68px);
     margin: 0 auto;
   }
   main .main_column .column_content_header > h3 {
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
     width: fit-content;
     font-size: clamp(14.4px, 1.125rem, 27px);
     font-family: "Noto Serif JP", "Yu Mincho", "游明朝体", serif;
     font-weight: 500;
     background: linear-gradient(to right, rgba(183, 143, 54, 0.8), rgba(202, 171, 102, 0.8) 45%, rgba(152, 127, 71, 0.8));
-    -webkit-background-clip: text;
-            background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     margin: clamp(12.8px, 1rem, 24px) auto 0;
     letter-spacing: clamp(2.304px, 0.18rem, 4.32px);
@@ -5184,16 +4900,6 @@ main .main_faq .faq_content .answer p {
     width: clamp(280px, 21.875rem, 525px);
     margin: clamp(90.4px, 7.0625rem, 169.5px) 0 0 0;
   }
-	.main_column .column_content_wrapper .column_content .column_content_button {
-		width: 90%;
-	}
-    main .main_column .main_column_bg {
-        width: 100%;
-        height: clamp(64px, 5rem, 120px);
-        background: url(../img/content_bg_origin.jpg) center / cover no-repeat;
-        margin: clamp(32px, 2.5rem, 60px) 0 0 0;
-        opacity: 30%;
-    }
   main .main_column .column_content_wrapper .column_content .column_content_button > a {
     width: 100%;
     font-family: "cannia", sans-serif;
@@ -5270,8 +4976,7 @@ main .main_faq .faq_content .answer p {
   main .main_column .column_content_wrapper .column_content .column_article .column_article_text div {
     display: flex;
     align-items: center;
-    -moz-column-gap: clamp(6.4px, 0.5rem, 12px);
-         column-gap: clamp(6.4px, 0.5rem, 12px);
+    column-gap: clamp(6.4px, 0.5rem, 12px);
   }
   main .main_column .column_content_wrapper .column_content .column_article .column_article_text div time {
     font-family: "cannia", sans-serif;
@@ -5307,16 +5012,12 @@ main .main_faq .faq_content .answer p {
   main .main_column .column_content_wrapper .column_content .column_article:first-of-type {
     margin: 0;
   }
-}
-@media screen and (max-width: 430px) {
   main .main_column .column_content_wrapper .column_content .column_border {
     width: 100%;
     height: clamp(0.8px, 0.0625rem, 1.5px);
-    background-color: #FFF9F5;
+    background-color: rgb(239, 218, 198);
     margin: clamp(19.2px, 1.5rem, 36px) 0 0 0;
   }
-}
-@media screen and (max-width: 430px) {
   main .column_pagenation {
     position: absolute;
     top: clamp(1624px, 126.875rem, 3045px);
@@ -5324,8 +5025,7 @@ main .main_faq .faq_content .answer p {
     display: flex;
     justify-content: center;
     align-items: center;
-    -moz-column-gap: clamp(16px, 1.25rem, 30px);
-         column-gap: clamp(16px, 1.25rem, 30px);
+    column-gap: clamp(16px, 1.25rem, 30px);
     margin: clamp(32px, 2.5rem, 60px) 0 0 0;
     font-family: "cannia", sans-serif;
     line-height: 1;
@@ -5689,7 +5389,7 @@ main .main_faq .faq_content .answer p {
 .main_news .news_content .news_border {
   width: 100%;
   height: clamp(0.8px, 0.0625rem, 1.5px);
-  background-color: #FFF9F5;
+  background-color: rgb(239, 218, 198);
   margin: clamp(12.8px, 1rem, 24px) 0 0 0;
 }
 .main_news .news_content .news_content_flex:not(:nth-of-type(1)) {
@@ -5762,7 +5462,7 @@ main .main_faq .faq_content .answer p {
   main .main_news .news_content .news_border {
     width: 100%;
     height: clamp(0.8px, 0.0625rem, 1.5px);
-    background-color: #FFF9F5;
+    background-color: rgb(239, 218, 198);
     margin: clamp(12.8px, 1rem, 24px) 0 0 0;
   }
   main .main_news .news_content .news_content_flex:not(:nth-of-type(1)) {
@@ -5796,8 +5496,7 @@ main .main_faq .faq_content .answer p {
 }
 .main_contact .contact_content > p span {
   font: 800 16px "Yu Mincho", "Noto Serif JP";
-  -webkit-text-decoration: underline rgb(102, 102, 102);
-          text-decoration: underline rgb(102, 102, 102);
+  text-decoration: underline rgb(102, 102, 102);
   color: rgb(102, 102, 102);
 }
 .main_contact .contact_content > p:not(:nth-of-type(1)) {
@@ -5822,7 +5521,8 @@ main .main_faq .faq_content .answer p {
   font-weight: 500;
   line-height: 1.5;
 }
-.main_contact .contact_content form > div:not(.contact_border) label, .main_contact .contact_content form > div:not(.contact_border) button {
+.main_contact .contact_content form > div:not(.contact_border) label,
+.main_contact .contact_content form > div:not(.contact_border) button {
   font-size: clamp(14.4px, 1.125rem, 27px);
   letter-spacing: 0;
   color: rgb(102, 102, 102);
@@ -5835,10 +5535,6 @@ main .main_faq .faq_content .answer p {
   border-radius: clamp(4px, 0.3125rem, 7.5px);
   box-sizing: border-box;
 }
-.main_contact .contact_content form > div:not(.contact_border) input::-moz-placeholder {
-  font-size: clamp(12.8px, 1rem, 24px);
-  color: rgb(204, 204, 204);
-}
 .main_contact .contact_content form > div:not(.contact_border) input::placeholder {
   font-size: clamp(12.8px, 1rem, 24px);
   color: rgb(204, 204, 204);
@@ -5850,14 +5546,12 @@ main .main_faq .faq_content .answer p {
 }
 .main_contact .contact_content form > div:not(.contact_border) div:has(> .birth_option_flex) {
   display: flex;
-  -moz-column-gap: clamp(6.4px, 0.5rem, 12px);
-       column-gap: clamp(6.4px, 0.5rem, 12px);
+  column-gap: clamp(6.4px, 0.5rem, 12px);
 }
 .main_contact .contact_content form > div:not(.contact_border) .birth_option_flex {
   display: flex;
   align-items: center;
-  -moz-column-gap: clamp(6.4px, 0.5rem, 12px);
-       column-gap: clamp(6.4px, 0.5rem, 12px);
+  column-gap: clamp(6.4px, 0.5rem, 12px);
   font-size: clamp(14.4px, 1.125rem, 27px);
   position: relative;
 }
@@ -5900,9 +5594,7 @@ main .main_faq .faq_content .answer p {
 }
 .main_contact .contact_content form > div:not(.contact_border) input[type=radio] {
   position: relative;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  appearance: none;
   width: clamp(16px, 1.25rem, 30px);
   height: clamp(16px, 1.25rem, 30px);
   border: clamp(0.8px, 0.0625rem, 1.5px) solid rgb(173, 127, 82);
@@ -5925,22 +5617,17 @@ main .main_faq .faq_content .answer p {
 }
 .main_contact .contact_content form > div:not(.contact_border) > div:has(input[type=radio]) {
   display: flex;
-  -moz-column-gap: clamp(25.6px, 2rem, 48px);
-       column-gap: clamp(25.6px, 2rem, 48px);
+  column-gap: clamp(25.6px, 2rem, 48px);
   width: clamp(248px, 19.375rem, 465px);
 }
 .main_contact .contact_content form > div:not(.contact_border) > div:has(input[type=radio]) > div {
   display: flex;
   align-items: center;
-  -moz-column-gap: clamp(6.4px, 0.5rem, 12px);
-       column-gap: clamp(6.4px, 0.5rem, 12px);
+  column-gap: clamp(6.4px, 0.5rem, 12px);
 }
 .main_contact .contact_content form > div:not(.contact_border) input[type=text]#datepicker,
 .main_contact .contact_content form > div:not(.contact_border) input[type=text]#datepicker2 {
   cursor: pointer;
-}
-.main_contact .contact_content form > div:not(.contact_border) input[type=text]#datepicker::-moz-placeholder, .main_contact .contact_content form > div:not(.contact_border) input[type=text]#datepicker2::-moz-placeholder {
-  color: black;
 }
 .main_contact .contact_content form > div:not(.contact_border) input[type=text]#datepicker::placeholder,
 .main_contact .contact_content form > div:not(.contact_border) input[type=text]#datepicker2::placeholder {
@@ -5955,9 +5642,6 @@ main .main_faq .faq_content .answer p {
   padding: clamp(14.4px, 1.125rem, 27px) clamp(19.2px, 1.5rem, 36px);
   border: clamp(0.8px, 0.0625rem, 1.5px) solid rgb(192, 157, 123);
   border-radius: clamp(4px, 0.3125rem, 7.5px);
-}
-.main_contact .contact_content form > div:not(.contact_border) textarea::-moz-placeholder {
-  color: rgb(204, 204, 204);
 }
 .main_contact .contact_content form > div:not(.contact_border) textarea::placeholder {
   color: rgb(204, 204, 204);
@@ -6009,8 +5693,7 @@ main .main_faq .faq_content .answer p {
   }
   .main_contact .contact_content > p span {
     font: 800 16px "Yu Mincho", "Noto Serif JP";
-    -webkit-text-decoration: underline rgb(102, 102, 102);
-            text-decoration: underline rgb(102, 102, 102);
+    text-decoration: underline rgb(102, 102, 102);
     color: rgb(102, 102, 102);
   }
   .main_contact .contact_content > p:not(:nth-of-type(1)) {
@@ -6035,7 +5718,8 @@ main .main_faq .faq_content .answer p {
     font-weight: 500;
     line-height: 1.5;
   }
-  .main_contact .contact_content form > div:not(.contact_border) label, .main_contact .contact_content form > div:not(.contact_border) button {
+  .main_contact .contact_content form > div:not(.contact_border) label,
+  .main_contact .contact_content form > div:not(.contact_border) button {
     font-size: clamp(14.4px, 1.125rem, 27px);
     letter-spacing: 0;
     color: rgb(102, 102, 102);
@@ -6048,10 +5732,6 @@ main .main_faq .faq_content .answer p {
     border-radius: clamp(4px, 0.3125rem, 7.5px);
     box-sizing: border-box;
   }
-  .main_contact .contact_content form > div:not(.contact_border) input::-moz-placeholder {
-    font-size: clamp(12.8px, 1rem, 24px);
-    color: rgb(204, 204, 204);
-  }
   .main_contact .contact_content form > div:not(.contact_border) input::placeholder {
     font-size: clamp(12.8px, 1rem, 24px);
     color: rgb(204, 204, 204);
@@ -6063,14 +5743,12 @@ main .main_faq .faq_content .answer p {
   }
   .main_contact .contact_content form > div:not(.contact_border) div:has(> .birth_option_flex) {
     display: flex;
-    -moz-column-gap: clamp(6.4px, 0.5rem, 12px);
-         column-gap: clamp(6.4px, 0.5rem, 12px);
+    column-gap: clamp(6.4px, 0.5rem, 12px);
   }
   .main_contact .contact_content form > div:not(.contact_border) .birth_option_flex {
     display: flex;
     align-items: center;
-    -moz-column-gap: clamp(6.4px, 0.5rem, 12px);
-         column-gap: clamp(6.4px, 0.5rem, 12px);
+    column-gap: clamp(6.4px, 0.5rem, 12px);
     font-size: clamp(14.4px, 1.125rem, 27px);
     position: relative;
   }
@@ -6108,8 +5786,7 @@ main .main_faq .faq_content .answer p {
     box-sizing: border-box;
   }
   .main_contact .contact_content form > div:not(.contact_border) .birth_option_flex {
-    -moz-column-gap: clamp(3.2px, 0.25rem, 6px);
-         column-gap: clamp(3.2px, 0.25rem, 6px);
+    column-gap: clamp(3.2px, 0.25rem, 6px);
   }
   .main_contact .contact_content form > div:not(.contact_border) .birth_option_flex::before, .main_contact .contact_content form > div:not(.contact_border) .birth_option_flex::after {
     right: clamp(28px, 2.1875rem, 52.5px);
@@ -6122,9 +5799,7 @@ main .main_faq .faq_content .answer p {
   }
   .main_contact .contact_content form > div:not(.contact_border) input[type=radio] {
     position: relative;
-    -webkit-appearance: none;
-       -moz-appearance: none;
-            appearance: none;
+    appearance: none;
     width: clamp(16px, 1.25rem, 30px);
     height: clamp(16px, 1.25rem, 30px);
     border: clamp(0.8px, 0.0625rem, 1.5px) solid rgb(173, 127, 82);
@@ -6151,8 +5826,7 @@ main .main_faq .faq_content .answer p {
   }
   .main_contact .contact_content form > div:not(.contact_border) > div:has(input[type=radio]) {
     width: clamp(96px, 7.5rem, 180px);
-    -moz-column-gap: clamp(4px, 0.3125rem, 7.5px);
-         column-gap: clamp(4px, 0.3125rem, 7.5px);
+    column-gap: clamp(4px, 0.3125rem, 7.5px);
   }
   .main_contact .contact_content form > div:not(.contact_border) > div:has(input[type=radio]) label {
     margin: 0;
@@ -6160,12 +5834,11 @@ main .main_faq .faq_content .answer p {
   .main_contact .contact_content form > div:not(.contact_border) > div:has(input[type=radio]) > div {
     display: flex;
     align-items: center;
-    -moz-column-gap: clamp(3.2px, 0.25rem, 6px);
-         column-gap: clamp(3.2px, 0.25rem, 6px);
+    column-gap: clamp(3.2px, 0.25rem, 6px);
     width: clamp(80px, 6.25rem, 150px);
   }
   .main_contact .contact_content form > div:not(.contact_border) input[type=text]#datepicker,
-.main_contact .contact_content form > div:not(.contact_border) input[type=text]#datepicker2 {
+  .main_contact .contact_content form > div:not(.contact_border) input[type=text]#datepicker2 {
     cursor: pointer;
   }
   .main_contact .contact_content form > div:not(.contact_border) span:not(.red) {
@@ -6246,8 +5919,7 @@ main .main_faq .faq_content .answer p {
   line-height: 1.6;
   letter-spacing: clamp(1.024px, 0.08rem, 1.92px);
   background: linear-gradient(to right, rgba(183, 143, 54, 0.8), rgba(202, 171, 102, 0.8) 45%, rgba(152, 127, 71, 0.8));
-  -webkit-background-clip: text;
-          background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   text-align: center;
 }
@@ -6295,8 +5967,7 @@ main .main_faq .faq_content .answer p {
     line-height: 1.6;
     letter-spacing: clamp(0.768px, 0.06rem, 1.44px);
     background: linear-gradient(to right, rgba(183, 143, 54, 0.8), rgba(202, 171, 102, 0.8) 45%, rgba(152, 127, 71, 0.8));
-    -webkit-background-clip: text;
-            background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     text-align: center;
   }
@@ -6335,8 +6006,7 @@ main .main_faq .faq_content .answer p {
   font-size: clamp(38.4px, 3rem, 72px);
   line-height: 1.5;
   background: linear-gradient(to right, rgba(183, 143, 54, 0.8), rgba(202, 171, 102, 0.8) 45%, rgba(152, 127, 71, 0.8));
-  -webkit-background-clip: text;
-          background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .main_laser .laser_content_header h3 {
@@ -6349,8 +6019,7 @@ main .main_faq .faq_content .answer p {
   display: flex;
   margin: clamp(12.8px, 1rem, 24px) 0 0 0;
   align-items: center;
-  -moz-column-gap: clamp(7.2px, 0.5625rem, 13.5px);
-       column-gap: clamp(7.2px, 0.5625rem, 13.5px);
+  column-gap: clamp(7.2px, 0.5625rem, 13.5px);
   font-family: "YuMincho", "Noto Serif JP", serif;
   font-weight: 500;
   line-height: 1.6;
@@ -6374,8 +6043,6 @@ main .main_faq .faq_content .answer p {
   background: rgb(255, 249, 245);
 }
 .main_laser .laser_content_header .laser_header_button {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
   width: fit-content;
   font-family: "Noto Serif JP", "Yu Mincho", serif;
   font-size: clamp(9.6px, 0.75rem, 18px);
@@ -6501,8 +6168,7 @@ main .main_faq .faq_content .answer p {
 }
 .main_laser .laser_merit .laser_merit_content {
   display: flex;
-  -moz-column-gap: clamp(32px, 2.5rem, 60px);
-       column-gap: clamp(32px, 2.5rem, 60px);
+  column-gap: clamp(32px, 2.5rem, 60px);
   margin: clamp(51.2px, 4rem, 96px) 0 0 0;
 }
 .main_laser .laser_merit .laser_merit_content .laser_merit_box {
@@ -6571,8 +6237,7 @@ main .main_faq .faq_content .answer p {
   font-size: clamp(28.8px, 2.25rem, 54px);
   line-height: 1;
   background: linear-gradient(to right, rgba(183, 143, 54, 0.8), rgba(202, 171, 102, 0.8) 45%, rgba(152, 127, 71, 0.8));
-  -webkit-background-clip: text;
-          background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .main_laser .laser_robot .laser_robot_flex .laser_robot_text .laser_robot_text_box {
@@ -6650,8 +6315,7 @@ main .main_faq .faq_content .answer p {
   font-size: clamp(28.8px, 2.25rem, 54px);
   letter-spacing: clamp(4.608px, 0.36rem, 8.64px);
   background: linear-gradient(to right, rgba(183, 143, 54, 0.8), rgba(202, 171, 102, 0.8) 45%, rgba(152, 127, 71, 0.8));
-  -webkit-background-clip: text;
-          background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   line-height: 1;
 }
@@ -6685,8 +6349,7 @@ main .main_faq .faq_content .answer p {
   font-size: clamp(28.8px, 2.25rem, 54px);
   letter-spacing: clamp(4.608px, 0.36rem, 8.64px);
   background: linear-gradient(to right, rgba(183, 143, 54, 0.8), rgba(202, 171, 102, 0.8) 45%, rgba(152, 127, 71, 0.8));
-  -webkit-background-clip: text;
-          background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   line-height: 1;
 }
@@ -6729,8 +6392,7 @@ main > div:nth-of-type(1) > .photosilk_content_header:nth-of-type(1) img:nth-of-
     font-size: clamp(19.2px, 1.5rem, 36px);
     line-height: 1.5;
     background: linear-gradient(to right, rgba(183, 143, 54, 0.8), rgba(202, 171, 102, 0.8) 45%, rgba(152, 127, 71, 0.8));
-    -webkit-background-clip: text;
-            background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
   }
   .main_laser .laser_content_header h3 {
@@ -6743,8 +6405,7 @@ main > div:nth-of-type(1) > .photosilk_content_header:nth-of-type(1) img:nth-of-
     display: flex;
     margin: clamp(12.8px, 1rem, 24px) 0 0 0;
     align-items: center;
-    -moz-column-gap: clamp(7.2px, 0.5625rem, 13.5px);
-         column-gap: clamp(7.2px, 0.5625rem, 13.5px);
+    column-gap: clamp(7.2px, 0.5625rem, 13.5px);
     font-family: "YuMincho", "Noto Serif JP", serif;
     font-weight: 500;
     line-height: 1.6;
@@ -6768,8 +6429,6 @@ main > div:nth-of-type(1) > .photosilk_content_header:nth-of-type(1) img:nth-of-
     background: rgb(255, 249, 245);
   }
   .main_laser .laser_content_header .laser_header_button {
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
     width: fit-content;
     font-family: "Noto Serif JP", "Yu Mincho", serif;
     font-size: clamp(9.6px, 0.75rem, 18px);
@@ -6807,15 +6466,11 @@ main > div:nth-of-type(1) > .photosilk_content_header:nth-of-type(1) img:nth-of-
     border-radius: clamp(8px, 0.625rem, 15px);
     margin: clamp(12.8px, 1rem, 24px) 0 0 0;
   }
-}
-@media screen and (max-width: 430px) {
   .main_laser .laser_link_wrapper {
     width: clamp(312px, 24.375rem, 585px);
     position: relative;
     padding: 0;
   }
-}
-@media screen and (max-width: 430px) {
   .main_laser .laser_link_bg {
     position: absolute;
     width: 100%;
@@ -6826,8 +6481,6 @@ main > div:nth-of-type(1) > .photosilk_content_header:nth-of-type(1) img:nth-of-
     top: 0;
     left: 0;
   }
-}
-@media screen and (max-width: 430px) {
   .main_laser .laser_link {
     margin: 0;
     padding: clamp(32px, 2.5rem, 60px) clamp(16px, 1.25rem, 30px);
@@ -6858,16 +6511,12 @@ main > div:nth-of-type(1) > .photosilk_content_header:nth-of-type(1) img:nth-of-
   .main_laser .laser_link a .price_arrow::after {
     width: clamp(2.4px, 0.1875rem, 4.5px);
   }
-}
-@media screen and (max-width: 430px) {
   .main_laser .laser_about {
     width: clamp(296px, 23.125rem, 555px);
     margin: clamp(32px, 2.5rem, 60px) 0 0 0;
     padding: clamp(32px, 2.5rem, 60px) 0 clamp(32px, 2.5rem, 60px) clamp(16px, 1.25rem, 30px);
     position: relative;
   }
-}
-@media screen and (max-width: 430px) {
   .main_laser .laser_about_bg {
     position: absolute;
     width: 100%;
@@ -6878,8 +6527,6 @@ main > div:nth-of-type(1) > .photosilk_content_header:nth-of-type(1) img:nth-of-
     background: url("../img/laser_about_bg.png") center/cover no-repeat;
     border-radius: 0 0 clamp(64px, 5rem, 120px) 0;
   }
-}
-@media screen and (max-width: 430px) {
   .main_laser .laser_about_bgc {
     position: absolute;
     width: 100%;
@@ -6890,8 +6537,6 @@ main > div:nth-of-type(1) > .photosilk_content_header:nth-of-type(1) img:nth-of-
     background: rgb(247, 247, 247);
     border-radius: 0 0 clamp(64px, 5rem, 120px) 0;
   }
-}
-@media screen and (max-width: 430px) {
   .main_laser .laser_about_text {
     display: flex;
     flex-direction: column;
@@ -6904,8 +6549,6 @@ main > div:nth-of-type(1) > .photosilk_content_header:nth-of-type(1) img:nth-of-
     line-height: 1.6;
     color: rgb(102, 102, 102);
   }
-}
-@media screen and (max-width: 430px) {
   .main_laser .laser_effect {
     width: 100%;
     background-color: rgb(255, 249, 245);
@@ -6928,8 +6571,6 @@ main > div:nth-of-type(1) > .photosilk_content_header:nth-of-type(1) img:nth-of-
     width: clamp(280px, 21.875rem, 525px);
     margin: clamp(19.2px, 1.5rem, 36px) 0 0 0;
   }
-}
-@media screen and (max-width: 430px) {
   .main_laser .laser_merit {
     padding: clamp(32px, 2.5rem, 60px) clamp(16px, 1.25rem, 30px);
     width: clamp(312px, 24.375rem, 585px);
@@ -6941,8 +6582,7 @@ main > div:nth-of-type(1) > .photosilk_content_header:nth-of-type(1) img:nth-of-
     width: clamp(280px, 21.875rem, 525px);
     display: flex;
     flex-direction: column;
-    -moz-column-gap: clamp(32px, 2.5rem, 60px);
-         column-gap: clamp(32px, 2.5rem, 60px);
+    column-gap: clamp(32px, 2.5rem, 60px);
     margin: clamp(51.2px, 4rem, 96px) 0 0 0;
   }
   .main_laser .laser_merit .laser_merit_content .laser_merit_box {
@@ -6989,8 +6629,6 @@ main > div:nth-of-type(1) > .photosilk_content_header:nth-of-type(1) img:nth-of-
   .main_laser .laser_merit .laser_merit_content .laser_merit_box:nth-of-type(2) h4 {
     background: rgb(204, 204, 204);
   }
-}
-@media screen and (max-width: 430px) {
   .main_laser .laser_robot {
     padding: clamp(32px, 2.5rem, 60px) clamp(16px, 1.25rem, 30px);
     background: rgb(247, 247, 247);
@@ -7017,8 +6655,7 @@ main > div:nth-of-type(1) > .photosilk_content_header:nth-of-type(1) img:nth-of-
     font-size: clamp(28.8px, 2.25rem, 54px);
     line-height: 1;
     background: linear-gradient(to right, rgba(183, 143, 54, 0.8), rgba(202, 171, 102, 0.8) 45%, rgba(152, 127, 71, 0.8));
-    -webkit-background-clip: text;
-            background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
   }
   .main_laser .laser_robot .laser_robot_flex .laser_robot_text .laser_robot_text_box {
@@ -7031,13 +6668,9 @@ main > div:nth-of-type(1) > .photosilk_content_header:nth-of-type(1) img:nth-of-
     line-height: 1.7;
     color: rgb(102, 102, 102);
   }
-}
-@media screen and (max-width: 430px) {
   .main_laser .laser_price {
     padding: clamp(32px, 2.5rem, 60px) clamp(16px, 1.25rem, 30px);
   }
-}
-@media screen and (max-width: 430px) {
   .main_laser .laser_price_content table {
     display: 100%;
   }
@@ -7056,10 +6689,8 @@ main > div:nth-of-type(1) > .photosilk_content_header:nth-of-type(1) img:nth-of-
     height: clamp(62.4px, 4.875rem, 117px);
   }
   .main_laser .laser_price_content table tbody td:nth-of-type(1) {
-    background: #FFF9F5;
+    background: rgb(239, 218, 198);
   }
-}
-@media screen and (max-width: 430px) {
   .content_brown_button {
     border: clamp(0.8px, 0.0625rem, 1.5px) solid rgb(173, 127, 82);
     background: white;
@@ -7069,25 +6700,17 @@ main > div:nth-of-type(1) > .photosilk_content_header:nth-of-type(1) img:nth-of-
   .content_brown_button img {
     transform: rotate(0);
   }
-}
-@media screen and (max-width: 430px) {
   .doctor_content {
     flex-direction: column-reverse;
   }
-}
-@media screen and (max-width: 430px) {
   .doctor_content_wrapper {
     margin: 0;
     padding: clamp(32px, 2.5rem, 60px) 0;
   }
-}
-@media screen and (max-width: 430px) {
   .doctor_content {
     width: clamp(280px, 21.875rem, 525px);
     padding: clamp(32px, 2.5rem, 60px) clamp(16px, 1.25rem, 30px);
   }
-}
-@media screen and (max-width: 430px) {
   .doctor_content_media_wrapper {
     width: clamp(248px, 19.375rem, 465px);
   }
@@ -7109,8 +6732,7 @@ main > div:nth-of-type(1) > .photosilk_content_header:nth-of-type(1) img:nth-of-
   }
   .doctor_content_media_wrapper .doctor_content_media a {
     padding: clamp(8px, 0.625rem, 15px);
-    -moz-column-gap: clamp(16px, 1.25rem, 30px);
-         column-gap: clamp(16px, 1.25rem, 30px);
+    column-gap: clamp(16px, 1.25rem, 30px);
   }
   .doctor_content_media_wrapper .doctor_content_media a:nth-of-type(1) {
     width: clamp(112.8px, 8.8125rem, 211.5px);
@@ -7120,8 +6742,6 @@ main > div:nth-of-type(1) > .photosilk_content_header:nth-of-type(1) img:nth-of-
     width: clamp(119.2px, 9.3125rem, 223.5px);
     height: clamp(36.8px, 2.875rem, 69px);
   }
-}
-@media screen and (max-width: 430px) {
   .doctor_content_text {
     width: clamp(248px, 19.375rem, 465px);
     margin: clamp(19.2px, 1.5rem, 36px) 0 0 0;
@@ -7143,8 +6763,6 @@ main > div:nth-of-type(1) > .photosilk_content_header:nth-of-type(1) img:nth-of-
     top: clamp(548px, 42.8125rem, 1027.5px);
     left: clamp(105.6px, 8.25rem, 198px);
   }
-}
-@media screen and (max-width: 430px) {
   .laser_about_title {
     display: flex;
   }
@@ -7160,13 +6778,10 @@ main > div:nth-of-type(1) > .photosilk_content_header:nth-of-type(1) img:nth-of-
     font-size: clamp(25.6px, 2rem, 48px);
     letter-spacing: clamp(3.072px, 0.24rem, 5.76px);
     background: linear-gradient(to right, rgba(183, 143, 54, 0.8), rgba(202, 171, 102, 0.8) 45%, rgba(152, 127, 71, 0.8));
-    -webkit-background-clip: text;
-            background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     line-height: 1;
   }
-}
-@media screen and (max-width: 430px) {
   main > div:nth-of-type(1) > .photosilk_content_header:nth-of-type(1) img:nth-of-type(1) {
     width: clamp(95.2px, 7.4375rem, 178.5px);
     position: absolute;
@@ -7299,7 +6914,7 @@ main > div:nth-of-type(1) > .photosilk_content_header:nth-of-type(1) img:nth-of-
     height: clamp(62.4px, 4.875rem, 117px);
   }
   .main_botox .laser_price_content table tbody tr:last-of-type td:nth-of-type(3) {
-    display: block;
+    display: none;
   }
   .main_botox .laser_price_content table tbody tr:last-of-type td:nth-of-type(4) {
     display: none;
@@ -7424,8 +7039,6 @@ main > div:nth-of-type(1) > .photosilk_content_header:nth-of-type(1) img:nth-of-
 .main_darmapen .darmapen_merit .darmapen_merit_content .darmapen_merit_box .darmapen_merit_box_text {
   height: clamp(264px, 20.625rem, 495px);
 }
-
-
 
 @media screen and (max-width: 430px) {
   .doctor_content p span {
@@ -7594,101 +7207,4 @@ main > div:nth-of-type(1) > .photosilk_content_header:nth-of-type(1) img:nth-of-
   .main_diagnosis .botox_robot .botox_robot_flex_wrapper .diagnosis_robot_flex:not(:nth-of-type(1)) {
     margin: clamp(102.4px, 8rem, 192px) 0 0 0;
   }
-	
-	table.botox-price-tb thead .botox-price-tr th  {
-        padding: 1.2rem 0rem !important;
-        line-height: 160% !important;
-        font-size: 1.2rem !important;
-   }
-	
-	main .main_price .price_content div .price_content_table {
-		overflow: auto !important;
-	}
-	
-	table.botox-price-tb {
-		width: 200% !important;
-		max-width: 200% !important;
-	}
-	
-	table.botox-price-tb tbody .botox-price-tr {
-		display: table-row !important;
-	}
-	
-	table.botox-price-tb tbody .botox-price-tr td{
-		display: table-cell !important;
-        width: auto !important;
-        height: auto !important;
-        padding: clamp(8px, 0.625rem, 15px) 0 !important;
-		line-height: 1.4 !important;
-	}
-	
-	table.botox-price-tb tbody .botox-price-tr .pc_n {
-		display: block !important;
-	}
-	
-	.botox_price_content {
-		overflow: auto;
-	}
-	
-	.laser_price .laser_price_content table th {
-		border: 0px !important;
-		padding: 1rem 0rem !important;
-	}
 }
-
-table.botox-price-tb tbody .botox-price-tr .pc_n {
-		display: block !important;
-}
-
- main .main_price .price_content table tbody tr td:nth-of-type(1) {
-     background: #fff9f5;
-}
-
-.main_price .price_content div table thead tr th  {
-        padding: 1rem 0rem !important;
-        font-size: 1rem !important;
-        color: white !important;
-        font-family: 'Zen Old Mincho' !important;
-		color: white !important;
-}
-
-.laser_price .laser_price_content table th {
-	border: solid 1px #c09d7b;
-	padding: 1rem 0rem;
-}
-
-.botox-price-tb {
-	 font-size: 1rem !important;
-     color: white !important;
-     font-family: 'Zen Old Mincho' !important;
-}
-
-.main_laser .laser_price_content table tbody td:nth-of-type(1) {
-     background: #FFF9F5;
-}
-.grid-col {
-    display: grid;
-    gap: 1rem;
-    grid-template-columns: repeat(1, 1fr);
-	font-size: 18px;
-	font-family: "Yu Mincho", "Noto Serif JP", serif;
-}
-.grid-col a::before {
-    content: "🔗";
-    color: #fff; /* optional: change color */
-    margin-right: 0.3em; /* spacing between icon and text */
-}
-
-@media screen and (max-width: 430px) {
-	.grid-col {
-		display: grid;
-		gap: 1rem;
-		grid-template-columns: repeat(1, 1fr);
-		font-family: "Yu Mincho", "Noto Serif JP", serif;
-	}
-}
-
-.wpcf7 form .wpcf7-response-output {
-	display: none !important;
-}
-/*# sourceMappingURL=style.css.map */
