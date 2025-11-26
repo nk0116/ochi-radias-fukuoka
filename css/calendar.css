@@ -1,0 +1,198 @@
+.calendarbox {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.calendarbox #calendar_switch {
+  z-index: 1000;
+  position: absolute;
+  right: 0%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  display: none;
+}
+
+.calendarbox #calendar_switch #calendar_prev,
+.calendarbox #calendar_switch #calendar_next {
+  position: relative;
+  display: block;
+  border: none;
+  border-radius: 5rem;
+  overflow: hidden;
+}
+
+@media screen and (min-width: 769px) {
+
+  .calendarbox #calendar_switch #calendar_prev,
+  .calendarbox #calendar_switch #calendar_next {
+    width: 4rem;
+    height: 4rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  .calendarbox #calendar_switch #calendar_prev,
+  .calendarbox #calendar_switch #calendar_next {
+    width: 3rem;
+    height: 3rem;
+  }
+}
+
+.calendarbox #calendar_switch #calendar_prev::before,
+.calendarbox #calendar_switch #calendar_next::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.calendarbox #calendar_switch #calendar_prev {
+  background: #2d4140;
+}
+
+.calendarbox #calendar_switch #calendar_prev::before {
+  background: url("../../img/common-img/arrow-l-w.svg") no-repeat;
+  background-position: center;
+  background-size: auto 50%;
+}
+
+.calendarbox #calendar_switch #calendar_next {
+  margin-left: 0.5rem;
+  background: #ccc;
+}
+
+.calendarbox #calendar_switch #calendar_next::before {
+  background: url("../../img/common-img/arrow-r-w.svg") no-repeat;
+  background-position: center;
+  background-size: auto 50%;
+}
+
+.calendarbox #calendar_switch.active #calendar_prev {
+  background: #ccc;
+}
+
+.calendarbox #calendar_switch.active #calendar_next {
+  background: #2d4140;
+}
+
+.calendarbox #calendar_flex {
+  display: flex;
+  gap: 4rem;
+}
+
+@media screen and (max-width: 768px) {
+  .calendarbox #calendar_flex {
+    flex-direction: column;
+  }
+}
+
+.calendarbox .ly-calendar {
+  border-collapse: collapse;
+}
+
+.calendarbox .ly-calendar .month-date {
+  line-height: 1.2;
+  font-size: 2rem;
+  color: #02b1a6;
+  text-align: center;
+  font-weight: 600;
+}
+
+.calendarbox .ly-calendar td {
+  vertical-align: top;
+  text-align: center;
+}
+
+.calendarbox .ly-calendar td .cell {
+  width: 100%;
+  min-height: 50px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.2rem;
+}
+
+@media screen and (max-width:768px) {
+  .calendarbox .ly-calendar td .cell {
+    font-size: .8rem;
+  }
+}
+
+.calendarbox .ly-calendar td .cell .date {
+  width: 100%;
+}
+
+.calendarbox .ly-calendar td .cell .date span {
+  display: block;
+  width: 100%;
+  padding: 2px 0;
+  font-weight: 600;
+  background-color: #e5f8f3;
+  font-family: "Spartan", "sans-serif";
+}
+.calendar__title
+.calendarbox .ly-calendar td .cell .special {
+  padding: .4rem 0;
+  font-size: .8rem;
+  line-height: 1.6;
+}
+
+.calendarbox .ly-calendar td .cell .special .is_closeday {
+  color: #202020;
+}
+
+.calendarbox .ly-calendar td .cell .special .tag {
+  background-color: #2D4140;
+  border-radius: .3rem;
+  color: #fff;
+  padding:0rem .4rem;
+}
+
+@media screen and (max-width:768px) {
+  .calendarbox .ly-calendar td .cell .special .tag {
+    padding: 0rem .2rem;
+  }
+}
+
+.calendarbox .ly-calendar td .cell .special .tag:not(:first-child) {
+  margin-top: 2px;
+}
+
+.calendarbox .ly-calendar td .cell .special .tag.doctor_2 {
+  background-color: #cb7d2e;
+}
+
+.calendarbox .ly-calendar td .cell .special .tag.doctor_3 {
+  background-color: #301ece;
+}
+
+.calendarbox .ly-calendar td .cell .special .tag.doctor_4 {
+  background-color: #073763;
+}
+
+.calendarbox .ly-calendar td .cell .special .tag.doctor_5 {
+  background-color: #0b8f33;
+}
+
+.calendarbox .ly-calendar td:first-child .cell .date span {
+  color: #a52a2a;
+}
+
+.calendarbox .ly-calendar td:last-child .cell .date span {
+  color: #0000ff;
+}
+
+
+
+/*# sourceMappingURL=calendar.css.map */

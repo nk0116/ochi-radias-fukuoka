@@ -1,0 +1,7 @@
+/* グループブロックの枠線 */
+.wp-block-group {
+  border: 2px dashed #0073aa;
+  padding: 15px;
+  margin: 10px 0;
+  position: relative;
+}
