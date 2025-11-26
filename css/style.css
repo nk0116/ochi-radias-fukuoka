@@ -7705,3 +7705,16 @@ main .main_price .price_content table tbody tr td:nth-of-type(1) {
   display: none !important;
 }
 /*# sourceMappingURL=style.css.map */
+
+.fat_dissolve_drug_wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+
+.fat_dissolve_drug_wrapper .botox_robot_flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start !important;
+  gap: 16px;
+}
