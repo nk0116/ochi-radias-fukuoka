@@ -1,0 +1,11 @@
+.fat_dissolve_drug_wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    .botox_robot_flex {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start !important;
+      gap: 16px;
+    }
+  }

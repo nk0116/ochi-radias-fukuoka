@@ -7,7 +7,7 @@
 body {
   width: 100%;
 }
-
+.main_column .column_content_wrapper .column_content .column_article
 .res_pc {
   display: block;
 }
@@ -24,6 +24,11 @@ body {
   .res_sp {
     display: block !important;
   }
+	
+	
+/*     main .main_price .price_content table tbody tr td:nth-of-type(3) {
+        display: block !important;
+    } */
 }
 
 a {
@@ -31,16 +36,6 @@ a {
   color: inherit;
   text-decoration: none;
   cursor: pointer;
-}
-
-figure {
-  display: block;
-  width: -webkit-fit-content !important;
-  width: -moz-fit-content !important;
-  width: fit-content !important;
-  height: -webkit-fit-content !important;
-  height: -moz-fit-content !important;
-  height: fit-content !important;
 }
 
 @font-face {
@@ -149,8 +144,9 @@ header .header_content .header_content_menu ul {
   list-style: none;
   color: rgb(102, 102, 102);
   font-family: "Noto Serif JP", "游明朝体", "Yu Mincho", "YuMincho", serif;
-  font-size: clamp(12.8px, 1rem, 24px);
+  font-size: clamp(11px, 0.875rem, 18px);
   font-weight: 800;
+    inline-size: max-content;
 }
 header .header_content .header_content_menu ul li:not(:last-child) {
   margin-right: clamp(19.2px, 1.5rem, 36px);
@@ -335,33 +331,33 @@ main .main_features {
   background: url("../img/feature_bg.png") center/cover no-repeat;
   padding: clamp(64px, 5rem, 120px) 0;
 }
-main .main_features div:has(> .feature_content_text) {
+main .main_features .feature_content {
   display: flex;
   justify-content: space-between;
   width: clamp(800px, 62.5rem, 1500px);
   margin: clamp(51.2px, 4rem, 96px) auto 0;
 }
-main .main_features div:has(> .feature_content_text) figure img {
+main .main_features .feature_content img {
   width: clamp(336px, 26.25rem, 630px);
   height: clamp(211.2px, 16.5rem, 396px);
   border: none;
   border-radius: clamp(16px, 1.25rem, 30px);
 }
-main .main_features div:has(> .feature_content_text) figure:nth-of-type(2) {
+main .main_features .feature_content img:nth-of-type(2) {
   position: absolute;
 }
-main .main_features div:has(> .feature_content_text) .feature_content_text {
+main .main_features .feature_content .feature_content_text {
   width: clamp(377.6px, 29.5rem, 708px);
   margin: 0;
 }
-main .main_features div:has(> .feature_content_text) h4 {
+main .main_features .feature_content h4 {
   font-size: clamp(14.4px, 1.125rem, 27px);
   font-weight: 600;
   font-family: "Noto Serif JP", "Yu Mincho", "游明朝体", serif;
   color: rgb(173, 127, 82);
   line-height: 1.6;
 }
-main .main_features div:has(> .feature_content_text) p {
+main .main_features .feature_content p {
   margin-top: clamp(19.2px, 1.5rem, 36px);
   font-size: clamp(12.8px, 1rem, 24px);
   font-weight: 500;
@@ -372,30 +368,25 @@ main .main_features div:has(> .feature_content_text) p {
 main .main_features .feature_content:not(:nth-of-type(3)) {
   flex-direction: row-reverse;
 }
-main .main_features .feature_content:not(:nth-of-type(3)) > div:has(> .feature_content_text) {
-  flex-direction: row-reverse;
-}
 main .main_features .feature_content:nth-of-type(3) {
   flex-direction: row;
 }
-main .main_features .feature_content:nth-of-type(3) figure:nth-of-type(2) {
+main .main_features .feature_content:nth-of-type(3) img:nth-of-type(2) {
+  width: clamp(124px, 9.6875rem, 232.5px);
+  height: auto;
   top: clamp(412px, 32.1875rem, 772.5px);
   left: clamp(100.8px, 7.875rem, 189px);
 }
-main .main_features .feature_content:nth-of-type(3) figure:nth-of-type(2) img {
-  width: clamp(124px, 9.6875rem, 232.5px);
-  height: auto;
-}
-main .main_features .feature_content:nth-of-type(2) figure:nth-of-type(2) img,
-main .main_features .feature_content:nth-of-type(4) figure:nth-of-type(2) img {
+main .main_features .feature_content:nth-of-type(2) img:nth-of-type(2),
+main .main_features .feature_content:nth-of-type(4) img:nth-of-type(2) {
   width: clamp(166.4px, 13rem, 312px);
   height: auto;
 }
-main .main_features .feature_content:nth-of-type(2) figure:nth-of-type(2) {
+main .main_features .feature_content:nth-of-type(2) img:nth-of-type(2) {
   top: clamp(168px, 13.125rem, 315px);
   right: clamp(91.2px, 7.125rem, 171px);
 }
-main .main_features .feature_content:nth-of-type(4) figure:nth-of-type(2) {
+main .main_features .feature_content:nth-of-type(4) img:nth-of-type(2) {
   top: clamp(648px, 50.625rem, 1215px);
   right: clamp(80px, 6.25rem, 150px);
 }
@@ -648,12 +639,12 @@ main .main_price h2 {
   letter-spacing: clamp(8.192px, 0.64rem, 15.36px);
   margin: 0 auto;
 }
-main .main_menu .titlesub,
-main .main_case_top .titlesub,
-main .main_gallery .titlesub,
-main .main_access .titlesub,
-main .main_calendar .titlesub,
-main .main_price .titlesub {
+main .main_menu > h3,
+main .main_case_top > h3,
+main .main_gallery > h3,
+main .main_access > h3,
+main .main_calendar > h3,
+main .main_price > h3 {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -845,9 +836,9 @@ main .about_case_img {
   height: clamp(179.2px, 14rem, 336px);
   border: clamp(0.8px, 0.0625rem, 1.5px) rgb(163, 129, 9) solid;
 }
-main .case_top_content_img div:has(> p),
-main .case_link_img div:has(> p),
-main .about_case_img div:has(> p) {
+main .case_top_content_img > div,
+main .case_link_img > div,
+main .about_case_img > div {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -855,9 +846,9 @@ main .about_case_img div:has(> p) {
   height: clamp(112px, 8.75rem, 210px);
   background-color: white;
 }
-main .case_top_content_img div:has(> p) p,
-main .case_link_img div:has(> p) p,
-main .about_case_img div:has(> p) p {
+main .case_top_content_img > div p,
+main .case_link_img > div p,
+main .about_case_img > div p {
   color: rgb(77, 77, 77);
   margin: 0 0 clamp(8px, 0.625rem, 15px) 0;
 }
@@ -1010,12 +1001,12 @@ main .main_access .main_access_bg {
   position: absolute;
   top: 0;
   width: 100%;
-  height: 100%;
+  height: clamp(520px, 40.625rem, 975px);
   background: url("../img/access_bg.jpg") center/cover no-repeat;
   opacity: 40%;
   z-index: -1;
 }
-main .main_access div:has(> .access_content) {
+main .main_access .access_content_wrapper {
   display: flex;
   align-items: center;
   -moz-column-gap: clamp(42.4px, 3.3125rem, 79.5px);
@@ -1023,56 +1014,56 @@ main .main_access div:has(> .access_content) {
   width: clamp(800px, 62.5rem, 1500px);
   margin: clamp(51.2px, 4rem, 96px) auto 0;
 }
-main .main_access div:has(> .access_content) .access_content {
+main .main_access .access_content_wrapper .access_content {
   width: clamp(440px, 34.375rem, 825px);
 }
-main .main_access div:has(> .access_content) h3 {
+main .main_access .access_content_wrapper h3 {
   font-size: clamp(16px, 1.25rem, 30px);
   font-weight: 800;
   line-height: 1.6;
   color: rgb(173, 127, 82);
 }
-main .main_access div:has(> .access_content) .access_border {
+main .main_access .access_content_wrapper .access_border {
   width: clamp(440px, 34.375rem, 825px);
   height: clamp(0.04px, 0.003125rem, 0.075px);
   border: clamp(0.8px, 0.0625rem, 1.5px) solid rgb(239, 218, 198);
   margin: clamp(12.8px, 1rem, 24px) 0;
 }
-main .main_access div:has(> .access_content) div:has(> h4) {
+main .main_access .access_content_wrapper .access_text {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-main .main_access div:has(> .access_content) div:has(> h4) h4, main .main_access div:has(> .access_content) div:has(> h4) p {
+main .main_access .access_content_wrapper .access_text h4, main .main_access .access_content_wrapper .access_text p {
   font-weight: 700;
   font-size: clamp(12.8px, 1rem, 24px);
   letter-spacing: clamp(1.024px, 0.08rem, 1.92px);
   line-height: 1.6;
 }
-main .main_access div:has(> .access_content) div:has(> h4) h4 {
+main .main_access .access_content_wrapper .access_text h4 {
   font-family: "Zen Old Mincho", "Noto Serif JP", "Yu Mincho" serif;
   color: rgb(173, 127, 82);
 }
-main .main_access div:has(> .access_content) div:has(> h4) p {
+main .main_access .access_content_wrapper .access_text p {
   width: clamp(354.4px, 27.6875rem, 664.5px);
   font-family: "Noto Serif JP", "Yu Mincho", serif;
   color: rgb(102, 102, 102);
 }
-main .main_access div:has(> .access_content) .access_map iframe {
+main .main_access .access_content_wrapper .access_map iframe {
   width: clamp(317.6px, 24.8125rem, 595.5px);
   height: clamp(226.4px, 17.6875rem, 424.5px);
 }
 main .main_calendar {
   padding: clamp(64px, 5rem, 120px) 0;
 }
-main .main_calendar div:has(> .calendar_content) {
+main .main_calendar .calendar_content_wrapper {
   display: flex;
   justify-content: center;
   -moz-column-gap: clamp(32px, 2.5rem, 60px);
        column-gap: clamp(32px, 2.5rem, 60px);
   margin: clamp(38.4px, 3rem, 72px) 0 0;
 }
-main .main_calendar div:has(> .calendar_content) h3 {
+main .main_calendar .calendar_content_wrapper h3 {
   font-family: "Noto Serif JP", "Yu Mincho", serif;
   font-size: clamp(19.2px, 1.5rem, 36px);
   font-weight: 800;
@@ -1081,11 +1072,11 @@ main .main_calendar div:has(> .calendar_content) h3 {
   text-align: center;
   color: rgb(173, 127, 82);
 }
-main .main_calendar div:has(> .calendar_content) .calendar-wrap {
+main .main_calendar .calendar_content_wrapper .calendar-wrap {
   margin: clamp(24px, 1.875rem, 45px) 0 0 0;
   width: clamp(436.8px, 34.125rem, 819px);
 }
-main .main_calendar div:has(> .calendar_content) .calendar table {
+main .main_calendar .calendar_content_wrapper .calendar {
   width: 100%;
   border-collapse: collapse;
   font-size: clamp(11.2px, 0.875rem, 21px);
@@ -1095,41 +1086,32 @@ main .main_calendar div:has(> .calendar_content) .calendar table {
   letter-spacing: clamp(0.448px, 0.035rem, 0.84px);
   color: rgb(102, 102, 102);
 }
-main .main_calendar div:has(> .calendar_content) .calendar table thead {
-  border: none;
-}
-main .main_calendar div:has(> .calendar_content) .calendar table thead th {
-  border: none;
-  padding: 0;
-}
-main .main_calendar div:has(> .calendar_content) .calendar table td {
+main .main_calendar .calendar_content_wrapper .calendar td {
   height: clamp(68px, 5.3125rem, 127.5px);
   border: clamp(0.8px, 0.0625rem, 1.5px) solid rgb(204, 204, 204);
   text-align: center;
-  padding: 0;
 }
-main .main_calendar div:has(> .calendar_content) .calendar table td > div:nth-of-type(1) {
+main .main_calendar .calendar_content_wrapper .calendar td > div:nth-of-type(1) {
   height: clamp(17.6px, 1.375rem, 33px);
   background-color: rgb(255, 249, 245);
   border-bottom: clamp(0.8px, 0.0625rem, 1.5px) solid rgb(204, 204, 204);
 }
-main .main_calendar div:has(> .calendar_content) .calendar table td > div:nth-of-type(2) {
+main .main_calendar .calendar_content_wrapper .calendar td > div:nth-of-type(2) {
   height: clamp(50.4px, 3.9375rem, 94.5px);
   line-height: clamp(50.4px, 3.9375rem, 94.5px);
   font-family: "Yu Mincho", "Noto Serif JP", serif;
   font-size: clamp(9.6px, 0.75rem, 18px);
 }
-main .main_calendar div:has(> .calendar_content) table .break {
-  color: rgb(165, 42, 42);
+main .main_calendar .calendar_content_wrapper .calendar .break {
+  color: rgb(255 0 0);
 }
-
-.main_booking {
+main .main_booking {
   background-color: rgb(247, 247, 247);
   font-family: "Noto Serif JP", "Yu Mincho", serif;
   padding: clamp(80px, 6.25rem, 150px) 0;
   line-height: 1.6;
 }
-.main_booking .booking_content {
+main .main_booking .booking_content {
   width: clamp(664px, 51.875rem, 1245px);
   height: clamp(280px, 21.875rem, 525px);
   text-align: center;
@@ -1137,7 +1119,7 @@ main .main_calendar div:has(> .calendar_content) table .break {
   margin: 0 auto;
   padding: clamp(64px, 5rem, 120px) 0;
 }
-.main_booking .booking_content h2, .main_booking .booking_content h3 {
+main .main_booking .booking_content h2, main .main_booking .booking_content h3 {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -1149,17 +1131,17 @@ main .main_calendar div:has(> .calendar_content) table .break {
   background-clip: content-box;
   -webkit-text-fill-color: inherit;
 }
-.main_booking .booking_content h3 {
+main .main_booking .booking_content h3 {
   font-size: clamp(22.4px, 1.75rem, 42px);
 }
-.main_booking .booking_content h2 {
+main .main_booking .booking_content h2 {
   font-size: clamp(51.2px, 4rem, 96px);
   font-weight: 300;
   font-family: "Noto Serif JP", "Yu Mincho", serif;
   letter-spacing: 0;
   line-height: 1.6;
 }
-.main_booking .booking_content .booking_content_link {
+main .main_booking .booking_content .booking_content_link {
   display: flex;
   -moz-column-gap: clamp(6.4px, 0.5rem, 12px);
        column-gap: clamp(6.4px, 0.5rem, 12px);
@@ -1170,7 +1152,7 @@ main .main_calendar div:has(> .calendar_content) table .break {
   font-family: "Zen Old Mincho", "Noto Serif JP", "Yu Mincho", serif;
   letter-spacing: clamp(0.512px, 0.04rem, 0.96px);
 }
-.main_booking .booking_content .booking_content_link a {
+main .main_booking .booking_content .booking_content_link a {
   display: flex;
   align-items: center;
   -moz-column-gap: clamp(8px, 0.625rem, 15px);
@@ -1178,18 +1160,18 @@ main .main_calendar div:has(> .calendar_content) table .break {
   border-radius: clamp(4px, 0.3125rem, 7.5px);
   padding: clamp(6.4px, 0.5rem, 12px) clamp(12.8px, 1rem, 24px);
 }
-.main_booking .booking_content .booking_content_link a img {
+main .main_booking .booking_content .booking_content_link a img {
   width: clamp(19.2px, 1.5rem, 36px);
 }
-.main_booking .booking_content .booking_content_link a:nth-of-type(1) {
+main .main_booking .booking_content .booking_content_link a:nth-of-type(1) {
   background-color: rgb(6, 199, 85);
   border: clamp(0.8px, 0.0625rem, 1.5px) rgb(6, 199, 85) solid;
 }
-.main_booking .booking_content .booking_content_link a:nth-of-type(2) {
+main .main_booking .booking_content .booking_content_link a:nth-of-type(2) {
   background-color: rgb(249, 137, 121);
   border: clamp(0.8px, 0.0625rem, 1.5px) rgb(249, 137, 121) solid;
 }
-.main_booking .booking_content .booking_content_link a:nth-of-type(3) {
+main .main_booking .booking_content .booking_content_link a:nth-of-type(3) {
   background-color: rgb(251, 199, 51);
   border: clamp(0.8px, 0.0625rem, 1.5px) rgb(251, 199, 51) solid;
 }
@@ -1553,82 +1535,65 @@ main .main_recommend_menu .about_case_pagenation .next {
   main .main_features h2 {
     font-weight: 400;
   }
-  main .main_features div:has(> .feature_content_text) {
+  main .main_features .feature_content {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     width: clamp(280px, 21.875rem, 525px);
     margin: clamp(19.2px, 1.5rem, 36px) auto 0;
   }
-  main .main_features div:has(> .feature_content_text) figure img {
+  main .main_features .feature_content img {
     width: clamp(280px, 21.875rem, 525px);
     height: clamp(176px, 13.75rem, 330px);
     border: none;
     border-radius: clamp(16px, 1.25rem, 30px);
   }
-  main .main_features div:has(> .feature_content_text) figure:nth-of-type(2) {
+  main .main_features .feature_content img:nth-of-type(2) {
     position: absolute;
   }
-  main .main_features div:has(> .feature_content_text) .feature_content_text {
+  main .main_features .feature_content .feature_content_text {
     width: 100%;
     margin: clamp(12.8px, 1rem, 24px) 0 0 0;
   }
-  main .main_features div:has(> .feature_content_text) h4 {
+  main .main_features .feature_content h4 {
     font-size: clamp(16px, 1.25rem, 30px);
     font-weight: 800;
   }
-  main .main_features div:has(> .feature_content_text) p {
+  main .main_features .feature_content p {
     margin-top: clamp(12.8px, 1rem, 24px);
   }
   main .main_features .feature_content:not(:nth-of-type(3)) {
     flex-direction: column;
   }
-  main .main_features .feature_content:not(:nth-of-type(3)) > div:has(.feature_content_text) {
-    flex-direction: column;
-  }
   main .main_features .feature_content:nth-of-type(3) {
     flex-direction: column;
   }
-  main .main_features .feature_content:nth-of-type(3) div:has(> .feature_content_text) {
-    flex-direction: column;
-  }
-  main .main_features .feature_content:nth-of-type(3) figure:nth-of-type(2) {
+  main .main_features .feature_content:nth-of-type(3) img:nth-of-type(2) {
+    width: clamp(61.6px, 4.8125rem, 115.5px);
+    height: auto;
     top: clamp(263.2px, 20.5625rem, 493.5px);
     left: clamp(-57px, -2.375rem, -30.4px);
   }
-  main .main_features .feature_content:nth-of-type(3) figure:nth-of-type(2) img {
-    width: clamp(61.6px, 4.8125rem, 115.5px);
-    height: auto;
-  }
-  main .main_features .feature_content:nth-of-type(2) figure:nth-of-type(2) {
+  main .main_features .feature_content:nth-of-type(2) img:nth-of-type(2) {
+    width: clamp(102.4px, 8rem, 192px);
     top: clamp(-37.5px, -1.5625rem, -20px);
     right: clamp(-30px, -1.25rem, -16px);
   }
-  main .main_features .feature_content:nth-of-type(2) figure:nth-of-type(2) img {
-    width: clamp(102.4px, 8rem, 192px);
-  }
-  main .main_features .feature_content:nth-of-type(2) figure:nth-of-type(3) {
+  main .main_features .feature_content:nth-of-type(2) img:nth-of-type(3) {
     position: absolute;
-    top: clamp(0px, 0rem, 0px);
-    right: clamp(24px, 1.875rem, 45px);
-    transform: rotate(40deg);
-  }
-  main .main_features .feature_content:nth-of-type(2) figure:nth-of-type(3) img {
     width: clamp(72px, 5.625rem, 135px);
     height: clamp(56.8px, 4.4375rem, 106.5px);
+    top: clamp(0px, 0rem, 0px);
+    right: clamp(24px, 1.875rem, 45px);
     background-size: contain;
+    transform: rotate(40deg);
   }
-  main .main_features .feature_content:nth-of-type(3) {
-    flex-direction: column;
-  }
-  main .main_features .feature_content:nth-of-type(4) figure:nth-of-type(2) {
+  main .main_features .feature_content:nth-of-type(4) img:nth-of-type(2) {
+    width: clamp(102.4px, 8rem, 192px);
+    height: clamp(43.2px, 3.375rem, 81px);
     top: clamp(587.2px, 45.875rem, 1101px);
     right: clamp(-60px, -2.5rem, -32px);
     z-index: 1;
-  }
-  main .main_features .feature_content:nth-of-type(4) figure:nth-of-type(2) img {
-    width: clamp(102.4px, 8rem, 192px);
-    height: clamp(43.2px, 3.375rem, 81px);
   }
 }
 @media screen and (max-width: 430px) {
@@ -1644,14 +1609,14 @@ main .main_price h2 {
     font-size: clamp(25.6px, 2rem, 48px);
     letter-spacing: clamp(4.096px, 0.32rem, 7.68px);
   }
-  main .main_concept .titlesub,
-main .main_doctor_top .titlesub,
-main .main_menu .titlesub,
-main .main_case_top .titlesub,
-main .main_news_top .titlesub,
-main .main_access .titlesub,
-main .main_calendar .titlesub,
-main .main_price .titlesub {
+  main .main_concept h3,
+main .main_doctor_top h3,
+main .main_menu h3,
+main .main_case_top h3,
+main .main_news_top h3,
+main .main_access h3,
+main .main_calendar h3,
+main .main_price h3 {
     font-weight: 500;
     font-size: clamp(14.4px, 1.125rem, 27px);
     font-weight: 500;
@@ -1897,9 +1862,9 @@ main .about_case_img {
     height: clamp(179.2px, 14rem, 336px);
     border: clamp(0.8px, 0.0625rem, 1.5px) rgb(163, 129, 9) solid;
   }
-  main .case_top_content_img div:has(> p),
-main .case_link_img div:has(> p),
-main .about_case_img div:has(> p) {
+  main .case_top_content_img > div,
+main .case_link_img > div,
+main .about_case_img > div {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -1907,9 +1872,9 @@ main .about_case_img div:has(> p) {
     height: clamp(112px, 8.75rem, 210px);
     background-color: white;
   }
-  main .case_top_content_img div:has(> p) p,
-main .case_link_img div:has(> p) p,
-main .about_case_img div:has(> p) p {
+  main .case_top_content_img > div p,
+main .case_link_img > div p,
+main .about_case_img > div p {
     color: rgb(77, 77, 77);
     margin: 0 0 clamp(8px, 0.625rem, 15px) 0;
   }
@@ -2068,9 +2033,9 @@ main .main_gallery .gallery_next::after {
     font-family: "Noto Serif JP", "Yu Mincho", "游明朝体", serif;
   }
   main .main_access .main_access_bg {
-    height: 100%;
+    height: clamp(628.8px, 49.125rem, 1179px);
   }
-  main .main_access div:has(> .access_content) {
+  main .main_access .access_content_wrapper {
     flex-direction: column;
     row-gap: clamp(19.2px, 1.5rem, 36px);
     -moz-column-gap: clamp(42.4px, 3.3125rem, 79.5px);
@@ -2078,37 +2043,37 @@ main .main_gallery .gallery_next::after {
     width: clamp(280px, 21.875rem, 525px);
     margin: clamp(19.2px, 1.5rem, 36px) auto 0;
   }
-  main .main_access div:has(> .access_content) .access_content {
+  main .main_access .access_content_wrapper .access_content {
     width: 100%;
   }
-  main .main_access div:has(> .access_content) .access_content h3 {
+  main .main_access .access_content_wrapper .access_content h3 {
     letter-spacing: 0;
   }
-  main .main_access div:has(> .access_content) .access_border {
+  main .main_access .access_content_wrapper .access_border {
     width: 100%;
     margin: clamp(12.8px, 1rem, 24px) 0 clamp(6.4px, 0.5rem, 12px);
   }
-  main .main_access div:has(> .access_content) div:has(> h4) {
+  main .main_access .access_content_wrapper .access_text {
     display: flex;
   }
-  main .main_access div:has(> .access_content) div:has(> h4) h4, main .main_access div:has(> .access_content) div:has(> h4) p {
+  main .main_access .access_content_wrapper .access_text h4, main .main_access .access_content_wrapper .access_text p {
     font-weight: 700;
     font-size: clamp(12.8px, 1rem, 24px);
     letter-spacing: clamp(1.024px, 0.08rem, 1.92px);
     line-height: 1.6;
   }
-  main .main_access div:has(> .access_content) div:has(> h4) h4 {
+  main .main_access .access_content_wrapper .access_text h4 {
     font-family: "Zen Old Mincho", "Noto Serif JP", "Yu Mincho" serif;
     color: rgb(173, 127, 82);
   }
-  main .main_access div:has(> .access_content) div:has(> h4) p {
+  main .main_access .access_content_wrapper .access_text p {
     width: clamp(194.4px, 15.1875rem, 364.5px);
     font-weight: 600;
     font-family: "Noto Serif JP", "Yu Mincho", serif;
     color: rgb(102, 102, 102);
     letter-spacing: 0;
   }
-  main .main_access div:has(> .access_content) .access_map iframe {
+  main .main_access .access_content_wrapper .access_map iframe {
     width: clamp(280px, 21.875rem, 525px);
     height: clamp(200px, 15.625rem, 375px);
   }
@@ -2117,7 +2082,7 @@ main .main_gallery .gallery_next::after {
   main .main_calendar {
     padding: clamp(32px, 2.5rem, 60px) 0;
   }
-  main .main_calendar div:has(> .calendar_content) {
+  main .main_calendar .calendar_content_wrapper {
     width: clamp(299.2px, 23.375rem, 561px);
     flex-direction: column;
     -moz-column-gap: normal;
@@ -2125,38 +2090,41 @@ main .main_gallery .gallery_next::after {
     row-gap: clamp(32px, 2.5rem, 60px);
     margin: clamp(19.2px, 1.5rem, 36px) auto 0;
   }
-  main .main_calendar div:has(> .calendar_content) h3 {
+  main .main_calendar .calendar_content_wrapper h3 {
     font-size: clamp(12.8px, 1rem, 24px);
     letter-spacing: clamp(0.512px, 0.04rem, 0.96px);
     text-align: center;
     color: rgb(173, 127, 82);
   }
-  main .main_calendar div:has(> .calendar_content) .calendar-wrap {
+  main .main_calendar .calendar_content_wrapper .calendar-wrap {
     margin: clamp(16px, 1.25rem, 30px) 0 0 0;
     width: 100%;
   }
-  main .main_calendar div:has(> .calendar_content) .calendar table {
+  main .main_calendar .calendar_content_wrapper .calendar {
     width: 100%;
     font-size: clamp(7.592px, 0.593125rem, 14.235px);
     letter-spacing: clamp(0.31008px, 0.024225rem, 0.5814px);
   }
-  main .main_calendar div:has(> .calendar_content) .calendar table td {
+  main .main_calendar .calendar_content_wrapper .calendar td {
     height: clamp(46.08px, 3.6rem, 86.4px);
     border: clamp(0.8px, 0.0625rem, 1.5px) solid rgb(204, 204, 204);
     text-align: center;
   }
-  main .main_calendar div:has(> .calendar_content) .calendar table td > div:nth-of-type(1) {
+  main .main_calendar .calendar_content_wrapper .calendar td > div:nth-of-type(1) {
     height: clamp(12px, 0.9375rem, 22.5px);
     background-color: rgb(255, 249, 245);
     border-bottom: clamp(0.8px, 0.0625rem, 1.5px) solid rgb(204, 204, 204);
   }
-  main .main_calendar div:has(> .calendar_content) .calendar table td > div:nth-of-type(2) {
+  main .main_calendar .calendar_content_wrapper .calendar td > div:nth-of-type(2) {
     height: clamp(34.08px, 2.6625rem, 63.9px);
     line-height: clamp(34.08px, 2.6625rem, 63.9px);
     font-size: clamp(8px, 0.625rem, 15px);
   }
-  main .main_calendar div:has(> .calendar_content) .calendar .break {
-    color: rgb(165, 42, 42);
+  main .main_calendar .calendar_content_wrapper .calendar .break {
+    color: #CCCCCC;
+  }
+  main .main_calendar .calendar_content_wrapper .calendar .break1 {
+    color: #0000FF;
   }
 }
 @media screen and (max-width: 430px) {
@@ -2562,7 +2530,7 @@ main .main_gallery .gallery_next::after {
     min-height: clamp(62.4px, 4.875rem, 117px);
   }
   main .main_price .price_content table tbody tr td:nth-of-type(1) {
-    background: rgb(239, 218, 198);
+    background: #FFF9F5;
   }
   main .main_price .price_content table tbody tr td:nth-of-type(3) {
     display: none;
@@ -2624,38 +2592,10 @@ main .main_gallery .gallery_next::after {
   padding: clamp(64px, 5rem, 120px) 0 0 0;
 }
 .main_treatment.main_price h2 {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  font-size: clamp(51.2px, 4rem, 96px);
-  font-weight: 200;
-  font-family: "cannia";
-  background: linear-gradient(to right, rgba(183, 143, 54, 0.8), rgba(202, 171, 102, 0.8) 45%, rgba(152, 127, 71, 0.8));
-  -webkit-background-clip: text;
-          background-clip: text;
-  -webkit-text-fill-color: transparent;
-  letter-spacing: clamp(8.192px, 0.64rem, 15.36px);
-  margin: 0 auto;
-}
-.main_treatment.main_price .titlesub {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  font-size: clamp(19.2px, 1.5rem, 36px);
-  font-family: "Noto Serif JP", "Yu Mincho", "游明朝体", serif;
-  font-weight: 400;
-  background: linear-gradient(to right, rgba(183, 143, 54, 0.8), rgba(202, 171, 102, 0.8) 45%, rgba(152, 127, 71, 0.8));
-  -webkit-background-clip: text;
-          background-clip: text;
-  -webkit-text-fill-color: transparent;
-  margin: clamp(12.8px, 1rem, 24px) auto 0;
-  letter-spacing: clamp(3.072px, 0.24rem, 5.76px);
-}
-.main_treatment.main_price .features_bar {
-  width: clamp(64px, 5rem, 120px);
-  height: clamp(0.8px, 0.0625rem, 1.5px);
-  background: linear-gradient(to right, rgba(183, 143, 54, 0.8), rgba(202, 171, 102, 0.8) 45%, rgba(152, 127, 71, 0.8));
-  margin: clamp(12.8px, 1rem, 24px) auto 0 auto;
+  display: flex;
+  -moz-column-gap: clamp(68px, 5.3125rem, 127.5px);
+       column-gap: clamp(68px, 5.3125rem, 127.5px);
+  width: clamp(568px, 44.375rem, 1065px);
 }
 .main_treatment.main_price .treatment_content_wrapper {
   position: relative;
@@ -2746,7 +2686,6 @@ main .main_gallery .gallery_next::after {
   width: clamp(280px, 21.875rem, 525px);
   -moz-column-gap: clamp(24px, 1.875rem, 45px);
        column-gap: clamp(24px, 1.875rem, 45px);
-  margin: clamp(40px, 3.125rem, 75px) 0 0 0;
 }
 
 @media screen and (max-width: 430px) {
@@ -2854,16 +2793,15 @@ main .main_treatment.main_price .treatment_content:nth-of-type(4) .treatment_lin
   }
 }
 .main_about_clinic.main_treatment.main_price h2 {
+  display: static;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
 }
 .main_about_clinic.main_treatment.main_price .about_clinic_content_wrapper {
+  margin: clamp(34.4px, 2.6875rem, 64.5px) 0 0 0;
   padding: clamp(64px, 5rem, 120px) 0;
   position: relative;
-}
-.main_about_clinic.main_treatment.main_price .about_clinic_content_wrapper:nth-of-type(2) {
-  margin: clamp(34.4px, 2.6875rem, 64.5px) 0 0 0;
 }
 .main_about_clinic.main_treatment.main_price .about_clinic_bg {
   position: absolute;
@@ -2901,7 +2839,7 @@ main .main_treatment.main_price .treatment_content:nth-of-type(4) .treatment_lin
 .main_about_clinic.main_treatment.main_price .about_clinic_content_wrapper:nth-of-type(3) {
   margin: 0;
 }
-.main_about_clinic.main_treatment.main_price .about_clinic_content_wrapper:nth-of-type(3) > div > h3 {
+.main_about_clinic.main_treatment.main_price .about_clinic_content_wrapper:nth-of-type(3) > h3 {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -2915,7 +2853,7 @@ main .main_treatment.main_price .treatment_content:nth-of-type(4) .treatment_lin
   letter-spacing: clamp(8.192px, 0.64rem, 15.36px);
   margin: 0 auto;
 }
-.main_about_clinic.main_treatment.main_price .about_clinic_content_wrapper:nth-of-type(3) > div > h4 {
+.main_about_clinic.main_treatment.main_price .about_clinic_content_wrapper:nth-of-type(3) > h4 {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -2929,31 +2867,28 @@ main .main_treatment.main_price .treatment_content:nth-of-type(4) .treatment_lin
   margin: clamp(12.8px, 1rem, 24px) auto 0;
   letter-spacing: clamp(3.072px, 0.24rem, 5.76px);
 }
-.main_about_clinic.main_treatment.main_price .about_clinic_content_wrapper:nth-of-type(3) > div .features_bar {
+.main_about_clinic.main_treatment.main_price .about_clinic_content_wrapper:nth-of-type(3) .features_bar {
   width: clamp(64px, 5rem, 120px);
   height: clamp(0.8px, 0.0625rem, 1.5px);
   background: linear-gradient(to right, rgba(183, 143, 54, 0.8), rgba(202, 171, 102, 0.8) 45%, rgba(152, 127, 71, 0.8));
   margin: clamp(12.8px, 1rem, 24px) auto 0 auto;
 }
 .main_about_clinic.main_treatment.main_price .about_clinic_content_wrapper:nth-of-type(3) .about_clinic_content {
-  margin: clamp(51.2px, 4rem, 96px) 0 0 0;
-}
-.main_about_clinic.main_treatment.main_price .about_clinic_content_wrapper:nth-of-type(3) .about_clinic_content div:has(> .wp-block-group) {
   display: flex;
   justify-content: center;
   -moz-column-gap: clamp(24px, 1.875rem, 45px);
        column-gap: clamp(24px, 1.875rem, 45px);
+  margin: clamp(51.2px, 4rem, 96px) 0 0 0;
 }
 .main_about_clinic.main_treatment.main_price .about_clinic_content_wrapper:nth-of-type(3) .about_clinic_content h4 {
   font-family: "Zen Old Mincho", "Yu Mincho", serif;
-  font-weight: 700;
+  font-weight: clamp(560px, 43.75rem, 1050px);
   font-size: clamp(16px, 1.25rem, 30px);
   line-height: 1.7;
   color: rgb(173, 127, 82);
   text-align: center;
-  margin: clamp(16px, 1.25rem, 30px) 0 0 0;
 }
-.main_about_clinic.main_treatment.main_price .about_clinic_content_wrapper:nth-of-type(3) div:has(> p) > p {
+.main_about_clinic.main_treatment.main_price .about_clinic_content_wrapper:nth-of-type(3) > p {
   font-family: "Yu Mincho", "Noto Serif JP", serif;
   line-height: 1.6;
   letter-spacing: clamp(1.024px, 0.08rem, 1.92px);
@@ -2988,28 +2923,26 @@ main .main_treatment.main_price .treatment_content:nth-of-type(4) .treatment_lin
   .main_about_clinic.main_treatment.main_price .about_clinic_content_wrapper:nth-of-type(3) {
     padding: clamp(32px, 2.5rem, 60px) clamp(16px, 1.25rem, 30px);
   }
-  .main_about_clinic.main_treatment.main_price .about_clinic_content_wrapper:nth-of-type(3) > div > h3 {
+  .main_about_clinic.main_treatment.main_price .about_clinic_content_wrapper:nth-of-type(3) h3 {
     font-size: clamp(25.6px, 2rem, 48px);
   }
-  .main_about_clinic.main_treatment.main_price .about_clinic_content_wrapper:nth-of-type(3) > div > h4 {
+  .main_about_clinic.main_treatment.main_price .about_clinic_content_wrapper:nth-of-type(3) h4 {
     font-size: clamp(14.4px, 1.125rem, 27px);
   }
   .main_about_clinic.main_treatment.main_price .about_clinic_content_wrapper:nth-of-type(3) .about_clinic_content {
     margin: clamp(19.2px, 1.5rem, 36px) auto 0;
-  }
-  .main_about_clinic.main_treatment.main_price .about_clinic_content_wrapper:nth-of-type(3) .about_clinic_content div:has(> .wp-block-group) {
     flex-direction: column;
     align-items: center;
   }
-  .main_about_clinic.main_treatment.main_price .about_clinic_content_wrapper:nth-of-type(3) .about_clinic_content div:has(> .wp-block-group) > div {
+  .main_about_clinic.main_treatment.main_price .about_clinic_content_wrapper:nth-of-type(3) .about_clinic_content > div {
     width: clamp(240px, 18.75rem, 450px);
   }
-  .main_about_clinic.main_treatment.main_price .about_clinic_content_wrapper:nth-of-type(3) .about_clinic_content div:has(> .wp-block-group) > div h4 {
+  .main_about_clinic.main_treatment.main_price .about_clinic_content_wrapper:nth-of-type(3) .about_clinic_content > div h4 {
     font-size: clamp(16px, 1.25rem, 30px);
     line-height: 1.7;
     margin: clamp(19.2px, 1.5rem, 36px) 0 0 0;
   }
-  .main_about_clinic.main_treatment.main_price .about_clinic_content_wrapper:nth-of-type(3) .about_clinic_content div:has(> .wp-block-group) > div:not(:nth-of-type(1)) {
+  .main_about_clinic.main_treatment.main_price .about_clinic_content_wrapper:nth-of-type(3) .about_clinic_content > div:not(:nth-of-type(1)) {
     margin: clamp(40px, 3.125rem, 75px) 0 0 0;
   }
 }
@@ -3253,11 +3186,11 @@ main .main_treatment.main_price .treatment_content:nth-of-type(4) .treatment_lin
   width: 100%;
   height: clamp(395.2px, 30.875rem, 741px);
 }
-.main_about_case .about_case_content_wrapper .about_case_img_wrapper .about_case_img div:has(> p) {
+.main_about_case .about_case_content_wrapper .about_case_img_wrapper .about_case_img > div {
   height: clamp(196.8px, 15.375rem, 369px);
   color: rgb(102, 102, 102);
 }
-.main_about_case .about_case_content_wrapper .about_case_img_wrapper .about_case_img div:has(> p) p {
+.main_about_case .about_case_content_wrapper .about_case_img_wrapper .about_case_img > div p {
   font-size: clamp(19.68px, 1.5375rem, 36.9px);
   margin: 0 0 clamp(15.2px, 1.1875rem, 28.5px) 0;
 }
@@ -3304,7 +3237,7 @@ main .main_treatment.main_price .treatment_content:nth-of-type(4) .treatment_lin
   height: clamp(8px, 0.625rem, 15px);
   background-color: rgb(217, 217, 217);
 }
-.main_about_case .about_case_content_wrapper div:has(> .about_case_text_wrapper) {
+.main_about_case .about_case_content_wrapper .about_case_content {
   display: flex;
   justify-content: space-between;
   margin: clamp(32px, 2.5rem, 60px) 0 0 0;
@@ -3351,9 +3284,6 @@ main .main_treatment.main_price .treatment_content:nth-of-type(4) .treatment_lin
     padding: clamp(32px, 2.5rem, 60px) 0;
     box-sizing: border-box;
   }
-  main .main_about_case .about_case_content_wrapper div:has(.about_case_text_wrapper) {
-    flex-direction: column;
-  }
   main .main_about_case .about_case_content_wrapper h3 {
     font-size: clamp(19.2px, 1.5rem, 36px);
     font-weight: 600;
@@ -3372,11 +3302,11 @@ main .main_treatment.main_price .treatment_content:nth-of-type(4) .treatment_lin
     width: 100%;
     height: clamp(395.2px, 30.875rem, 741px);
   }
-  main .main_about_case .about_case_content_wrapper .about_case_img_wrapper .about_case_img div:has(> p) {
+  main .main_about_case .about_case_content_wrapper .about_case_img_wrapper .about_case_img > div {
     height: clamp(196.8px, 15.375rem, 369px);
     color: rgb(102, 102, 102);
   }
-  main .main_about_case .about_case_content_wrapper .about_case_img_wrapper .about_case_img div:has(> p) p {
+  main .main_about_case .about_case_content_wrapper .about_case_img_wrapper .about_case_img > div p {
     font-size: clamp(19.68px, 1.5375rem, 36.9px);
     margin: 0 0 clamp(15.2px, 1.1875rem, 28.5px) 0;
   }
@@ -3618,7 +3548,7 @@ main .main_flow .flow_content_bgcolor {
 }
 main .main_flow .flow_content {
   display: flex;
-  width: 100%;
+  width: clamp(800px, 62.5rem, 1500px);
   -moz-column-gap: clamp(38.4px, 3rem, 72px);
        column-gap: clamp(38.4px, 3rem, 72px);
 }
@@ -4446,7 +4376,6 @@ main .main_faq .faq_content .answer p {
   padding: clamp(9.6px, 0.75rem, 18px) clamp(16px, 1.25rem, 30px);
   border: clamp(0.8px, 0.0625rem, 1.5px) solid #AD7F52;
   border-radius: clamp(16px, 1.25rem, 30px);
-  cursor: pointer;
 }
 .doctor_content .doctor_content_media a div {
   font-family: "Noto Serif JP", "Yu Mincho", serif;
@@ -4905,6 +4834,13 @@ main .main_faq .faq_content .answer p {
 .main_column .column_content_header {
   padding: clamp(64px, 5rem, 120px) 0;
 }
+.main_column .main_column_bg {
+    width: 100%;
+    height: clamp(64px, 5rem, 120px);
+    background: url(../img/content_bg_origin.jpg) center / cover no-repeat;
+    margin: clamp(64px, 5rem, 120px) 0 0 0;
+    opacity: 30%;
+}
 .main_column .column_content_header > h2 {
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -4950,9 +4886,9 @@ main .main_faq .faq_content .answer p {
 }
 .main_column .column_content_wrapper .column_content {
   display: flex;
-  justify-content: space-between;
   width: clamp(800px, 62.5rem, 1500px);
   margin: 0 auto;
+    gap: 2rem;
 }
 .main_column .column_content_wrapper .column_content .column_content_button {
   width: clamp(128px, 10rem, 240px);
@@ -5005,10 +4941,17 @@ main .main_faq .faq_content .answer p {
   border: clamp(0.8px, 0.0625rem, 1.5px) solid rgb(192, 157, 123);
   border-radius: clamp(3.2px, 0.25rem, 6px);
 }
+
+.main_column .column_content_wrapper .column_content .column_content_button .column_category_link .active {
+    background-color: #c09d7b;
+    color: #fff;
+}
 .main_column .column_content_wrapper .column_content .column_article {
   display: flex;
   align-items: center;
   margin: clamp(19.2px, 1.5rem, 36px) 0 0 0;
+    flex-direction: row;
+    gap: 2rem;
 }
 .main_column .column_content_wrapper .column_content .column_article img {
   width: clamp(128px, 10rem, 240px);
@@ -5017,7 +4960,7 @@ main .main_faq .faq_content .answer p {
   background-color: rgb(217, 217, 217);
 }
 .main_column .column_content_wrapper .column_content .column_article .column_article_text {
-  margin: 0 0 0 clamp(19.2px, 1.5rem, 36px);
+/*   margin: 0 0 0 clamp(19.2px, 1.5rem, 36px); */
 }
 .main_column .column_content_wrapper .column_content .column_article .column_article_text h4 {
   font-family: "Noto Serif JP", "Yu Mincho", serif;
@@ -5061,7 +5004,7 @@ main .main_faq .faq_content .answer p {
   position: relative;
   border: clamp(0.8px, 0.0625rem, 1.5px) solid rgb(192, 157, 123);
   border-radius: 50%;
-  margin: 0 0 0 clamp(62.4px, 4.875rem, 117px);
+/*   margin: 0 0 0 clamp(62.4px, 4.875rem, 117px); */
 }
 .main_column .column_content_wrapper .column_content .column_article > a div {
   position: absolute;
@@ -5096,7 +5039,7 @@ main .main_faq .faq_content .answer p {
 .main_column .column_content_wrapper .column_content .column_border {
   width: 100%;
   height: clamp(0.8px, 0.0625rem, 1.5px);
-  background-color: rgb(239, 218, 198);
+  background-color: #FFF9F5;
   margin: clamp(19.2px, 1.5rem, 36px) 0 0 0;
 }
 
@@ -5139,6 +5082,48 @@ main .main_faq .faq_content .answer p {
 }
 
 @media screen and (max-width: 430px) {
+	.main_column .column_content_wrapper .column_content {
+		display: flex;
+		width: 100%;
+		margin: 0;
+		gap: 2rem;
+		flex-direction: column-reverse;
+        align-items: center;
+	}
+	.main_column .column_content_wrapper .column_content .column_article {
+		display: flex;
+		align-items: center;
+		margin: 0;
+		flex-direction: row;
+		gap: 1rem;
+		width: 90%;
+		justify-content: center;
+	}
+	.main_column .column_content_wrapper .column_content .column_article > a {
+		width: clamp(32px, 2.5rem, 60px);
+		height: clamp(32px, 2.5rem, 60px);
+		position: relative;
+		border: clamp(0.8px, 0.0625rem, 1.5px) solid rgb(192, 157, 123);
+		border-radius: 50%;
+		/* margin: 0 0 0 clamp(62.4px, 4.875rem, 117px); */
+		display: none;
+	}
+	.main_column .column_content_wrapper .column_content .column_artice_wrapper {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		
+	}
+	.main_column .column_content_wrapper .column_content .column_article .column_article_text {
+		margin: 0;
+	}
+	.main_column .column_content_wrapper .column_content .column_article img {
+		width: 180px;
+        height: fit-content;
+        border-radius: clamp(8px, 0.625rem, 15px);
+        background-color: rgb(217, 217, 217);
+	}
+	
   main .main_column {
     padding: 0;
   }
@@ -5199,6 +5184,16 @@ main .main_faq .faq_content .answer p {
     width: clamp(280px, 21.875rem, 525px);
     margin: clamp(90.4px, 7.0625rem, 169.5px) 0 0 0;
   }
+	.main_column .column_content_wrapper .column_content .column_content_button {
+		width: 90%;
+	}
+    main .main_column .main_column_bg {
+        width: 100%;
+        height: clamp(64px, 5rem, 120px);
+        background: url(../img/content_bg_origin.jpg) center / cover no-repeat;
+        margin: clamp(32px, 2.5rem, 60px) 0 0 0;
+        opacity: 30%;
+    }
   main .main_column .column_content_wrapper .column_content .column_content_button > a {
     width: 100%;
     font-family: "cannia", sans-serif;
@@ -5317,7 +5312,7 @@ main .main_faq .faq_content .answer p {
   main .main_column .column_content_wrapper .column_content .column_border {
     width: 100%;
     height: clamp(0.8px, 0.0625rem, 1.5px);
-    background-color: rgb(239, 218, 198);
+    background-color: #FFF9F5;
     margin: clamp(19.2px, 1.5rem, 36px) 0 0 0;
   }
 }
@@ -5370,111 +5365,19 @@ main .main_faq .faq_content .answer p {
   opacity: 0.3;
 }
 .main_about_column .about_column_content_wrapper {
+  padding: clamp(64px, 5rem, 120px) 0;
+}
+.main_about_column .about_column_content {
   width: clamp(800px, 62.5rem, 1500px);
   margin: 0 auto;
   font-family: "Yu Mincho", "Noto Serif JP", serif;
-  padding: clamp(64px, 5rem, 120px) 0;
 }
-.main_about_column .about_column_content_wrapper img {
+.main_about_column .about_column_content img {
   display: block;
   width: 100%;
   height: clamp(352px, 27.5rem, 660px);
   background-color: rgb(217, 217, 217);
   border-radius: clamp(8px, 0.625rem, 15px);
-}
-.main_about_column .about_column_content_wrapper h1 {
-  font-weight: 800;
-  font-size: clamp(28.8px, 2.25rem, 54px);
-  line-height: 1.5;
-  color: rgb(173, 127, 82);
-  margin: clamp(6.4px, 0.5rem, 12px) 0 0 0;
-}
-.main_about_column .about_column_content_wrapper p {
-  font-weight: 500;
-  font-size: clamp(12.8px, 1rem, 24px);
-  line-height: 1.78;
-  color: rgb(102, 102, 102);
-  margin: clamp(19.2px, 1.5rem, 36px) 0 0 0;
-}
-.main_about_column .about_column_content_wrapper .about_column_menu {
-  border-collapse: collapse;
-  border-radius: clamp(8px, 0.625rem, 15px);
-  overflow: hidden;
-  margin: clamp(25.6px, 2rem, 48px) 0 0 0;
-}
-.main_about_column .about_column_content_wrapper .about_column_menu h3 {
-  color: white;
-  font-family: "Noto Serif JP", "Yu Mincho", serif;
-  font-weight: 700;
-  font-size: clamp(14.4px, 1.125rem, 27px);
-  line-height: 1.3333333333;
-  background-color: rgb(192, 157, 123);
-  border: clamp(0.8px, 0.0625rem, 1.5px) solid rgb(204, 204, 204);
-  padding: clamp(12.8px, 1rem, 24px) 0 clamp(12.8px, 1rem, 24px) clamp(25.6px, 2rem, 48px);
-  margin: 0;
-}
-.main_about_column .about_column_content_wrapper .about_column_menu > div {
-  color: rgb(102, 102, 102);
-  font-size: clamp(14.4px, 1.125rem, 27px);
-  font-weight: 500;
-  line-height: 1.7777777778;
-  border: clamp(0.8px, 0.0625rem, 1.5px) solid rgb(204, 204, 204);
-  border-top: transparent;
-  padding: clamp(12.8px, 1rem, 24px) 0 clamp(12.8px, 1rem, 24px) clamp(25.6px, 2rem, 48px);
-}
-.main_about_column .about_column_content_wrapper h2 {
-  margin: clamp(44.8px, 3.5rem, 84px) 0 0 0;
-  color: rgb(173, 127, 82);
-  font-weight: 800;
-  font-size: clamp(25.6px, 2rem, 48px);
-  line-height: 1.78;
-}
-.main_about_column .about_column_content_wrapper h2 + p {
-  margin: clamp(38.4px, 3rem, 72px) 0 0 0;
-}
-.main_about_column .about_column_content_wrapper h2 span {
-  font-size: clamp(19.2px, 1.5rem, 36px);
-  font-weight: 800;
-  line-height: 1.78;
-  font-family: "YuMincho", "Noto Serif JP", serif;
-  color: inherit;
-}
-.main_about_column .about_column_content_wrapper h3 {
-  margin: clamp(45.6px, 3.5625rem, 85.5px) 0 0 0;
-  color: rgb(173, 127, 82);
-  font-weight: 800;
-  font-size: clamp(16px, 1.25rem, 30px);
-  line-height: 1.78;
-}
-.main_about_column .about_column_content_wrapper h3 + p {
-  margin: clamp(51.2px, 4rem, 96px) 0 0 0;
-}
-.main_about_column .about_column_content_wrapper .about_column_img {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: clamp(25.6px, 2rem, 48px) 0 clamp(12.8px, 1rem, 24px);
-  margin: clamp(25.6px, 2rem, 48px) 0 0 0;
-}
-.main_about_column .about_column_content_wrapper .about_column_img img {
-  width: clamp(659.2px, 51.5rem, 1236px);
-  height: clamp(240px, 18.75rem, 450px);
-}
-.main_about_column .about_column_content_wrapper .about_column_img p {
-  width: clamp(667.2px, 52.125rem, 1251px);
-  color: rgb(137, 137, 137);
-  margin: clamp(8px, 0.625rem, 15px) 0 0 0;
-}
-.main_about_column .about_column_content_wrapper .about_column_img + p {
-  margin: clamp(51.2px, 4rem, 96px) 0 0 0;
-}
-.main_about_column .about_column_content_wrapper .content_brown_button {
-  margin: clamp(64px, 5rem, 120px) auto 0;
-}
-.main_about_column .about_column_content_wrapper .content_brown_button img {
-  width: clamp(20.8px, 1.625rem, 39px);
-  height: clamp(20.8px, 1.625rem, 39px);
-  background-color: transparent;
 }
 .main_about_column .about_column_content > .category_button {
   color: white;
@@ -5491,6 +5394,99 @@ main .main_faq .faq_content .answer p {
 }
 .main_about_column .about_column_content > a {
   margin: clamp(19.2px, 1.5rem, 36px) 0 0 0;
+}
+.main_about_column .about_column_content h1 {
+  font-weight: 800;
+  font-size: clamp(28.8px, 2.25rem, 54px);
+  line-height: 1.5;
+  color: rgb(173, 127, 82);
+  margin: clamp(6.4px, 0.5rem, 12px) 0 0 0;
+}
+.main_about_column .about_column_content p {
+  font-weight: 500;
+  font-size: clamp(12.8px, 1rem, 24px);
+  line-height: 1.78;
+  color: rgb(102, 102, 102);
+  margin: clamp(19.2px, 1.5rem, 36px) 0 0 0;
+}
+.main_about_column .about_column_content .about_column_menu {
+  border-collapse: collapse;
+  border-radius: clamp(8px, 0.625rem, 15px);
+  overflow: hidden;
+  margin: clamp(25.6px, 2rem, 48px) 0 0 0;
+}
+.main_about_column .about_column_content .about_column_menu h3 {
+  color: white;
+  font-family: "Noto Serif JP", "Yu Mincho", serif;
+  font-weight: 700;
+  font-size: clamp(14.4px, 1.125rem, 27px);
+  line-height: 1.3333333333;
+  background-color: rgb(192, 157, 123);
+  border: clamp(0.8px, 0.0625rem, 1.5px) solid rgb(204, 204, 204);
+  padding: clamp(12.8px, 1rem, 24px) 0 clamp(12.8px, 1rem, 24px) clamp(25.6px, 2rem, 48px);
+}
+.main_about_column .about_column_content .about_column_menu > div {
+  color: rgb(102, 102, 102);
+  font-size: clamp(14.4px, 1.125rem, 27px);
+  font-weight: 500;
+  line-height: 1.7777777778;
+  border: clamp(0.8px, 0.0625rem, 1.5px) solid rgb(204, 204, 204);
+  border-top: transparent;
+  padding: clamp(12.8px, 1rem, 24px) 0 clamp(12.8px, 1rem, 24px) clamp(25.6px, 2rem, 48px);
+}
+.main_about_column .about_column_content h2 {
+  margin: clamp(44.8px, 3.5rem, 84px) 0 0 0;
+  color: rgb(173, 127, 82);
+  font-weight: 800;
+  font-size: clamp(25.6px, 2rem, 48px);
+  line-height: 1.78;
+}
+.main_about_column .about_column_content h2 + p {
+  margin: clamp(38.4px, 3rem, 72px) 0 0 0;
+}
+.main_about_column .about_column_content h2 span {
+  font-size: clamp(19.2px, 1.5rem, 36px);
+  font-weight: 800;
+  line-height: 1.78;
+  font-family: "YuMincho", "Noto Serif JP", serif;
+  color: inherit;
+}
+.main_about_column .about_column_content h3 {
+  margin: clamp(45.6px, 3.5625rem, 85.5px) 0 0 0;
+  color: rgb(173, 127, 82);
+  font-weight: 800;
+  font-size: clamp(16px, 1.25rem, 30px);
+  line-height: 1.78;
+}
+.main_about_column .about_column_content h3 + p {
+  margin: clamp(51.2px, 4rem, 96px) 0 0 0;
+}
+.main_about_column .about_column_content .about_column_img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: clamp(25.6px, 2rem, 48px) 0 clamp(12.8px, 1rem, 24px);
+  margin: clamp(25.6px, 2rem, 48px) 0 0 0;
+}
+.main_about_column .about_column_content .about_column_img img {
+  width: clamp(659.2px, 51.5rem, 1236px);
+  height: clamp(240px, 18.75rem, 450px);
+}
+.main_about_column .about_column_content .about_column_img p {
+  width: clamp(667.2px, 52.125rem, 1251px);
+  color: rgb(137, 137, 137);
+  margin: clamp(8px, 0.625rem, 15px) 0 0 0;
+}
+.main_about_column .about_column_content .about_column_img + p {
+  margin: clamp(51.2px, 4rem, 96px) 0 0 0;
+}
+.main_about_column .about_column_content .content_brown_button {
+  margin: clamp(64px, 5rem, 120px) auto 0;
+}
+.main_about_column .about_column_content .content_brown_button img {
+  width: clamp(20.8px, 1.625rem, 39px);
+  height: clamp(20.8px, 1.625rem, 39px);
+  background-color: transparent;
 }
 .main_about_column .doctor_content_wrapper {
   margin: 0;
@@ -5629,7 +5625,7 @@ main .main_faq .faq_content .answer p {
     height: clamp(40px, 3.125rem, 75px);
   }
   .main_about_column .doctor_content_text h5 {
-    top: clamp(548px, 42.8125rem, 1027.5px);
+    top: clamp(552px, 43.125rem, 1035px);
   }
 }
 .main_news .news_content_wrapper {
@@ -5693,7 +5689,7 @@ main .main_faq .faq_content .answer p {
 .main_news .news_content .news_border {
   width: 100%;
   height: clamp(0.8px, 0.0625rem, 1.5px);
-  background-color: rgb(239, 218, 198);
+  background-color: #FFF9F5;
   margin: clamp(12.8px, 1rem, 24px) 0 0 0;
 }
 .main_news .news_content .news_content_flex:not(:nth-of-type(1)) {
@@ -5766,7 +5762,7 @@ main .main_faq .faq_content .answer p {
   main .main_news .news_content .news_border {
     width: 100%;
     height: clamp(0.8px, 0.0625rem, 1.5px);
-    background-color: rgb(239, 218, 198);
+    background-color: #FFF9F5;
     margin: clamp(12.8px, 1rem, 24px) 0 0 0;
   }
   main .main_news .news_content .news_content_flex:not(:nth-of-type(1)) {
@@ -5882,9 +5878,6 @@ main .main_faq .faq_content .answer p {
   right: clamp(40px, 3.125rem, 75px);
   transform: rotate(-45deg);
 }
-.main_contact .contact_content form > div:not(.contact_border) .birth_option_flex select {
-  cursor: pointer;
-}
 .main_contact .contact_content form > div:not(.contact_border) .birth_option_flex.click::before {
   transform: rotate(-40deg);
 }
@@ -5915,7 +5908,6 @@ main .main_faq .faq_content .answer p {
   border: clamp(0.8px, 0.0625rem, 1.5px) solid rgb(173, 127, 82);
   border-radius: 50%;
   padding: 0;
-  cursor: pointer;
 }
 .main_contact .contact_content form > div:not(.contact_border) input[type=radio]:checked::after {
   content: "";
@@ -5946,6 +5938,13 @@ main .main_faq .faq_content .answer p {
 .main_contact .contact_content form > div:not(.contact_border) input[type=text]#datepicker,
 .main_contact .contact_content form > div:not(.contact_border) input[type=text]#datepicker2 {
   cursor: pointer;
+}
+.main_contact .contact_content form > div:not(.contact_border) input[type=text]#datepicker::-moz-placeholder, .main_contact .contact_content form > div:not(.contact_border) input[type=text]#datepicker2::-moz-placeholder {
+  color: black;
+}
+.main_contact .contact_content form > div:not(.contact_border) input[type=text]#datepicker::placeholder,
+.main_contact .contact_content form > div:not(.contact_border) input[type=text]#datepicker2::placeholder {
+  color: black;
 }
 .main_contact .contact_content form > div:not(.contact_border) span:not(.red) {
   font-size: clamp(11.2px, 0.875rem, 21px);
@@ -6339,14 +6338,12 @@ main .main_faq .faq_content .answer p {
   -webkit-background-clip: text;
           background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-family: "YuMincho", "Noto Serif JP", serif;
 }
 .main_laser .laser_content_header h3 {
   font-weight: 500;
   font-size: clamp(11.2px, 0.875rem, 21px);
   line-height: 1.6;
   color: rgb(102, 102, 102);
-  font-family: "YuMincho", "Noto Serif JP", serif;
 }
 .main_laser .laser_content_header .laser_price_flex {
   display: flex;
@@ -7059,7 +7056,7 @@ main > div:nth-of-type(1) > .photosilk_content_header:nth-of-type(1) img:nth-of-
     height: clamp(62.4px, 4.875rem, 117px);
   }
   .main_laser .laser_price_content table tbody td:nth-of-type(1) {
-    background: rgb(239, 218, 198);
+    background: #FFF9F5;
   }
 }
 @media screen and (max-width: 430px) {
@@ -7428,6 +7425,8 @@ main > div:nth-of-type(1) > .photosilk_content_header:nth-of-type(1) img:nth-of-
   height: clamp(264px, 20.625rem, 495px);
 }
 
+
+
 @media screen and (max-width: 430px) {
   .doctor_content p span {
     font-size: clamp(19.2px, 1.5rem, 36px);
@@ -7595,5 +7594,102 @@ main > div:nth-of-type(1) > .photosilk_content_header:nth-of-type(1) img:nth-of-
   .main_diagnosis .botox_robot .botox_robot_flex_wrapper .diagnosis_robot_flex:not(:nth-of-type(1)) {
     margin: clamp(102.4px, 8rem, 192px) 0 0 0;
   }
+	
+	table.botox-price-tb thead .botox-price-tr th  {
+        padding: 1.2rem 0rem !important;
+        line-height: 160% !important;
+        font-size: 1.2rem !important;
+   }
+	
+	main .main_price .price_content div .price_content_table {
+		overflow: auto !important;
+	}
+	
+	table.botox-price-tb {
+		width: 200% !important;
+		max-width: 200% !important;
+	}
+	
+	table.botox-price-tb tbody .botox-price-tr {
+		display: table-row !important;
+	}
+	
+	table.botox-price-tb tbody .botox-price-tr td{
+		display: table-cell !important;
+        width: auto !important;
+        height: auto !important;
+        padding: clamp(8px, 0.625rem, 15px) 0 !important;
+		line-height: 1.4 !important;
+	}
+	
+	table.botox-price-tb tbody .botox-price-tr .pc_n {
+		display: block !important;
+	}
+	
+	.botox_price_content {
+		overflow: auto;
+	}
+	
+	.laser_price .laser_price_content table th {
+		border: 0px !important;
+		padding: 1rem 0rem !important;
+	}
+}
+
+table.botox-price-tb tbody .botox-price-tr .pc_n {
+		display: block !important;
+}
+
+ main .main_price .price_content table tbody tr td:nth-of-type(1) {
+     background: #fff9f5;
+}
+
+.main_price .price_content div table thead tr th  {
+        padding: 1rem 0rem !important;
+        font-size: 1rem !important;
+        color: white !important;
+        font-family: 'Zen Old Mincho' !important;
+		color: white !important;
+}
+
+.laser_price .laser_price_content table th {
+	border: solid 1px #c09d7b;
+	padding: 1rem 0rem;
+}
+
+.botox-price-tb {
+	 font-size: 1rem !important;
+     color: white !important;
+     font-family: 'Zen Old Mincho' !important;
+}
+
+.main_laser .laser_price_content table tbody td:nth-of-type(1) {
+     background: #FFF9F5;
+}
+.grid-col {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(1, 1fr);
+	font-size: 18px;
+	font-family: "Yu Mincho", "Noto Serif JP", serif;
+}
+.grid-col a::before {
+    content: "🔗";
+    color: #fff; /* optional: change color */
+    margin-right: 0.3em; /* spacing between icon and text */
+}
+
+@media screen and (max-width: 430px) {
+	.grid-col {
+		display: grid;
+		gap: 1rem;
+		grid-template-columns: repeat(1, 1fr);
+		font-family: "Yu Mincho", "Noto Serif JP", serif;
+	}
+}
+
+.wpcf7 form .wpcf7-response-output {
+	display: none !important;
 }
 /*# sourceMappingURL=style.css.map */
+
